@@ -7,9 +7,12 @@
             background: #FFF;
             padding: 35px;
             min-height: 490px;
-
+            .slide_icon{
+                line-height: 0;
+            }
             .slide_description {
                 margin-top: 20px;
+                line-height: 28.8px;
             }
 
             .slide_bottom {
@@ -22,23 +25,34 @@
                 line-height: 21px;
             }
         }
-
-
     }
-    .slide_btn_group{
-        bottom:0;
+
+    .commentSlide {
+        position: relative;
+    }
+
+    .slide_btn_group {
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto 0;
     }
 }
 
 // slide component
 .pagination {
     margin-top: 25px;
+
     .swiper-pagination-bullet {
         border-radius: 2px;
-        background:  #E1E8F2;
+        background: #E1E8F2;
         width: 18px;
         height: 4px;
     }
+
     .swiper-pagination-bullet-active {
         border-radius: 2px;
         background: var(--unnamed, #223A67);

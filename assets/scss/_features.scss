@@ -3,10 +3,18 @@
     padding-bottom: 100px;
     .features_lists{
         margin-top: 50px;
+        gap: 0 ;
+    }
+    .features_lists_top{
+        .features_item_title{
+            line-height: 30px;
+            margin-top: 5px;
+        }
     }
     .features_lists_bottom{
-    margin-top: 25px;
+    margin-top:25px;
     }
+
     .features_item{
         width: calc(16.66% - 7.5px);
         padding: 30px 30px 35px  ;
@@ -15,6 +23,9 @@
         border-left: 1px solid #E1E8F2;
         border-top: 1px solid #223A67;
         background: #FFF;    
+        .features_item_title{
+            line-height: 28.8px;
+        }
         }
         
 }

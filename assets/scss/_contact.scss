@@ -1,14 +1,12 @@
 .contact {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
     border-top: 1px solid #E1E8F2;
     border-bottom: 1px solid #E1E8F2;
     background: #FFF;
-
     .contact_top {
-        gap: 10px 0;
+        gap: 7px 0;
     }
-
     .forms_content {
         width: 100%;
         max-width: 400px;
@@ -18,8 +16,8 @@
     .forms {
         width: 100%;
         max-width: 400px;
-        gap: 15px 0;
-        margin-top: 50px;
+        gap: 26px 0;
+        margin-top: 60px;
 
         .form_item {
             width: 100%;
@@ -70,27 +68,42 @@
         .button.light {
             width: 100% !important;
             text-align: center;
+            margin-top: -10px;
         }
 
         button {
             text-align: center;
             width: 100%;
-            margin-top: 10px;
+            padding: 20px 40px;
+            margin-top: -5px;
         }
     }
-  
+    
+
 }
-.contact_card{
+
+.contact_card {
     padding-top: 100px;
     padding-bottom: 100px;
+    .buttons_contact{
+       padding-left: 35px;
+       gap: 8px;
+    }
 }
-.contact_component{
+
+.contact_component {
     margin-top: 50px;
 }
-.contact_items{
-    gap: 25px 0;
-   .contact_item{
-    gap: 5px 0;
-    width: calc(50% - 12.5px);
-   }
+
+.contact_items {
+    gap: 25px 2px;
+
+    .contact_item {
+        gap: 5px 0;
+        width: 50%;
+        flex: 0 0 auto;
+        &:nth-child(1){
+            width: 49%;
+        }
+    }
 }

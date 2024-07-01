@@ -1,36 +1,78 @@
-.footer{
+.footer {
     padding: 50px 0 32px;
-    background:#05141F;
-    .footer_content{
+    background: #05141F;
+
+    .footer_content {
         padding-bottom: 50px;
-        .footer_item{
-            &:nth-child(1){
-              .item_links{
-                margin-top: 25px;
-              }  
+
+        .footer_item {
+            flex: 0 0 auto;
+
+            // width: calc(26% - 10px);
+            &:nth-child(2) {
+                flex: 0 0 auto;
+                width: 35%;
             }
-            .item_title{
+
+            &:nth-child(1) {
+                width: calc(21.5% - 10px);
+
+                .item_links {
+                    margin-top: 25px;
+                }
+            }
+
+            &:nth-child(3) {
+                width: 20%;
+
+                .item_links {
+                    margin-top: 0;
+                }
+            }
+
+            &:nth-child(4) {
+                .item_links {
+                    margin-top: 0;
+                }
+            }
+
+            .footer_phone {
+                color: var(--FFFFFF, #FFF);
+                font-family: Manrope;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28.6px;
+            }
+
+            .item_title {
                 color: #fff;
             }
-            .item_links{
+
+            .item_links {
                 gap: 15px 0;
                 margin-top: 15px;
 
-                a{
+                a {
                     color: #ffffff;
                 }
             }
         }
     }
-    .footer_bottom{
-        padding: 32px 0 0 ;
-        border-top:1px solid rgba(255, 255, 255, 0.30);
-        .bottom_item,a{
+
+    .footer_bottom {
+        padding: 32px 0 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.30);
+
+        .bottom_item,
+        a {
             color: rgba(255, 255, 255, 0.60);
         }
-        .bottom_item:last-child{
+
+        .bottom_item:last-child {
             gap: 0 10px;
-            .icon_bottom{
+
+            .icon_bottom {
                 line-height: 0;
             }
         }

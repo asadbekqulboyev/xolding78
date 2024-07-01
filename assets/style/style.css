@@ -43,7 +43,7 @@
   line-height: 0;
 }
 .header .header_left .burger_icon svg path {
-  color: white;
+  fill: white;
 }
 .header .header_left .burger_icon.light svg path {
   fill: #223A67;
@@ -319,7 +319,7 @@
 
 .objects {
   padding-top: 50px;
-  gap: 25px 0;
+  gap: 22px 0;
 }
 .objects .object {
   border: 1px solid #E1E8F2;
@@ -332,7 +332,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  line-height: 41.6px;
+  line-height: 45.6px;
 }
 .objects .object .object_img {
   height: 100%;
@@ -345,13 +345,13 @@
 
 .contact {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
   border-top: 1px solid #E1E8F2;
   border-bottom: 1px solid #E1E8F2;
   background: #FFF;
 }
 .contact .contact_top {
-  gap: 10px 0;
+  gap: 7px 0;
 }
 .contact .forms_content {
   width: 100%;
@@ -361,8 +361,8 @@
 .contact .forms {
   width: 100%;
   max-width: 400px;
-  gap: 15px 0;
-  margin-top: 50px;
+  gap: 26px 0;
+  margin-top: 60px;
 }
 .contact .forms .form_item {
   width: 100%;
@@ -406,16 +406,22 @@
 .contact .forms .button.light {
   width: 100% !important;
   text-align: center;
+  margin-top: -10px;
 }
 .contact .forms button {
   text-align: center;
   width: 100%;
-  margin-top: 10px;
+  padding: 20px 40px;
+  margin-top: -5px;
 }
 
 .contact_card {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.contact_card .buttons_contact {
+  padding-left: 35px;
+  gap: 8px;
 }
 
 .contact_component {
@@ -423,11 +429,15 @@
 }
 
 .contact_items {
-  gap: 25px 0;
+  gap: 25px 2px;
 }
 .contact_items .contact_item {
   gap: 5px 0;
-  width: calc(50% - 12.5px);
+  width: 50%;
+  flex: 0 0 auto;
+}
+.contact_items .contact_item:nth-child(1) {
+  width: 49%;
 }
 
 .features {
@@ -436,6 +446,11 @@
 }
 .features .features_lists {
   margin-top: 50px;
+  gap: 0;
+}
+.features .features_lists_top .features_item_title {
+  line-height: 30px;
+  margin-top: 5px;
 }
 .features .features_lists_bottom {
   margin-top: 25px;
@@ -449,6 +464,9 @@
   border-top: 1px solid #223A67;
   background: #FFF;
 }
+.features .features_item .features_item_title {
+  line-height: 28.8px;
+}
 
 .comment .slide_content {
   margin-top: 50px;
@@ -459,8 +477,12 @@
   padding: 35px;
   min-height: 490px;
 }
+.comment .slide_content .slide_item .slide_icon {
+  line-height: 0;
+}
 .comment .slide_content .slide_item .slide_description {
   margin-top: 20px;
+  line-height: 28.8px;
 }
 .comment .slide_content .slide_item .slide_bottom {
   gap: 0 20px;
@@ -470,8 +492,17 @@
   font-size: 14px;
   line-height: 21px;
 }
+.comment .commentSlide {
+  position: relative;
+}
 .comment .slide_btn_group {
+  width: 100%;
+  top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto 0;
 }
 
 .pagination {
@@ -499,8 +530,35 @@
 .footer .footer_content {
   padding-bottom: 50px;
 }
+.footer .footer_content .footer_item {
+  flex: 0 0 auto;
+}
+.footer .footer_content .footer_item:nth-child(2) {
+  flex: 0 0 auto;
+  width: 35%;
+}
+.footer .footer_content .footer_item:nth-child(1) {
+  width: calc(21.5% - 10px);
+}
 .footer .footer_content .footer_item:nth-child(1) .item_links {
   margin-top: 25px;
+}
+.footer .footer_content .footer_item:nth-child(3) {
+  width: 20%;
+}
+.footer .footer_content .footer_item:nth-child(3) .item_links {
+  margin-top: 0;
+}
+.footer .footer_content .footer_item:nth-child(4) .item_links {
+  margin-top: 0;
+}
+.footer .footer_content .footer_item .footer_phone {
+  color: var(--FFFFFF, #FFF);
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.6px;
 }
 .footer .footer_content .footer_item .item_title {
   color: #fff;
@@ -516,7 +574,8 @@
   padding: 32px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-.footer .footer_bottom .bottom_item, .footer .footer_bottom a {
+.footer .footer_bottom .bottom_item,
+.footer .footer_bottom a {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer_bottom .bottom_item:last-child {
@@ -673,4 +732,8 @@ body {
   height: 70px;
   border-radius: 50%;
   background: #00E709;
+}
+
+.mt_15 {
+  margin-top: 25px;
 }/*# sourceMappingURL=style.css.map */
