@@ -1,0 +1,30 @@
+.choose_type{
+    padding-top: 100px;
+    .types{
+        padding-top: 50px;
+    }
+    .type{
+        padding: 25px;
+        border: 1px solid #E1E8F2;
+        gap: 15px 0;
+        transition: all .2s linear;
+        .type_img{
+            width: 100%;
+            line-height: 0;
+            img{
+                width: 100%;
+                object-fit: contain;
+                height: 213px;
+            }
+        }
+        .type_title{
+            color:#223A67;
+        }
+        &:hover{
+            background: #223A67;
+            .type_title{
+                color:#fff;
+            }
+        }
+    }
+}

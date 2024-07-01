@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import 'header';
+@import 'hero';
+@import 'type';
+@import 'objects';
+@import 'contact';
+@import 'features';
+@import 'comment';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: #243452;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    background: #FAFAFA;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1820px;
+    padding: 0 25px;
+}
+
+// component
+.flex {
+    display: flex;
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.a_center {
+        align-items: center;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+// text component
+.text_18_6 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    color: #223A67;
+}
+
+.text_24_6 {
+    color: #223A67;
+    line-height: 31.2px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text_bluedark {
+    color: #223A67
+}
+
+.section_title {
+    color: #223A67;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49.4px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+// slide btn
+.btn_container {
+    width:100% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.slide_btn_group {
+    .btn_slide {
+        user-select: none;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 233;
+        background: rgba(255, 255, 255, 0.30);
+        cursor: pointer;
+
+        &.prev {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.button {
+    padding: 15.5px 40px;
+    width: fit-content;
+
+    &.sm_light {
+        padding: 10px 15px;
+        gap: 0 10px;
+        align-items: center;
+
+        span {
+            color: #223A67;
+        }
+
+        .button_icon {
+            line-height: 0;
+        }
+    }
+
+    &.orange {
+        background: #F8511C;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+
+    &.light {
+        background: #E1E8F2;
+
+        .card_btn {
+            gap: 0 10px;
+            line-height: 0;
+            color: #223A67;
+
+        }
+    }
+}
+
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    z-index: 2;
+    right: 75px;
+
+    a {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #00E709;
+    }
+}

@@ -1,0 +1,50 @@
+.comment {
+    .slide_content {
+        margin-top: 50px;
+
+        .slide_item {
+            border: 1px solid #E1E8F2;
+            background: #FFF;
+            padding: 35px;
+            min-height: 490px;
+
+            .slide_description {
+                margin-top: 20px;
+            }
+
+            .slide_bottom {
+                gap: 0 20px;
+            }
+
+            .info_company {
+                color: #7C8BA7;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+
+    }
+    .slide_btn_group{
+        bottom:0;
+    }
+}
+
+// slide component
+.pagination {
+    margin-top: 25px;
+    .swiper-pagination-bullet {
+        border-radius: 2px;
+        background:  #E1E8F2;
+        width: 18px;
+        height: 4px;
+    }
+    .swiper-pagination-bullet-active {
+        border-radius: 2px;
+        background: var(--unnamed, #223A67);
+        width: 36px;
+        height: 4px;
+        padding: 0;
+        border: 0;
+    }
+}

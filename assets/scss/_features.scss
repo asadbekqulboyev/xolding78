@@ -1,0 +1,20 @@
+.features{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .features_lists{
+        margin-top: 50px;
+    }
+    .features_lists_bottom{
+    margin-top: 25px;
+    }
+    .features_item{
+        width: calc(16.66% - 7.5px);
+        padding: 30px 30px 35px  ;
+        border-right: 1px solid  #E1E8F2;
+        border-bottom: 1px solid #E1E8F2;
+        border-left: 1px solid #E1E8F2;
+        border-top: 1px solid #223A67;
+        background: #FFF;    
+        }
+        
+}

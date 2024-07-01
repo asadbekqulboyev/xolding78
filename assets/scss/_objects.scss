@@ -1,0 +1,35 @@
+.our_objects {
+    padding: 100px 0;
+
+    .top_content {
+        gap: 48px;
+    }
+}
+
+.objects {
+    padding-top: 50px;
+    gap: 25px 0;
+
+    .object {
+        border: 1px solid #E1E8F2;
+        padding: 25px;
+        width: calc(50% - 12.5px);
+        background: #fff;
+        .object_title {
+            color: #223A67;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 41.6px;
+        }
+        .object_img {
+            height: 100%;
+            line-height: 0;
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+
+}

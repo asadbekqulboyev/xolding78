@@ -1,0 +1,208 @@
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: none;
+    width: 100%;
+    z-index: 111;
+    transition:.2s all linear;
+    background: #00000000;
+    &.light{
+        background: #FFF;
+        .header_left{
+          a{
+            color: #223A67;
+        }  
+        }
+        .header_right{
+         a,select{
+            color: #223A67;
+         }
+        }
+    }
+    .header_left {
+        gap: 0 50px;
+        align-items: center;
+        flex: 0 0 auto;
+        width: 33.33%;
+        a{
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height:28.8px;
+            transition: .2s linear;
+        }
+        .burger_icon {
+            line-height: 0;
+            cursor: pointer;
+            svg {
+                transition: all .2s linear;
+                line-height: 0;
+                path{
+                    color: white;
+                }
+            }
+            &.light{
+                svg path{
+                    fill: #223A67;
+                } 
+            }
+        }
+
+        .exit_menu {
+            cursor: pointer;
+        }
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        width: 32%;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .header_right {
+        gap: 0 45px;
+        flex: 0 0 auto;
+        width: 33.33%;
+        justify-content: flex-end;
+        a {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 31.2px;
+            transition: .2s linear;
+        }
+        .form_lang {
+        gap: 0 5px;
+        span{
+            line-height: 0;
+        }
+        }
+
+        select {
+            outline: none;
+            border: none;
+            color: #FFF;
+            line-height: 28.8px;
+            background: none;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 500;
+            cursor: pointer;
+            -webkit-appearance: none;
+            transition: .2s linear;
+
+        }
+        .icons_select{
+            svg path{
+                stroke:white;
+                transition: all .2s linear;
+            }
+            &.light{
+                svg path{
+                    stroke:#223A67;
+                }
+            }
+
+        }
+    }
+
+    .menu_overlay {
+        background: #00000056;
+        width: 100%;
+        position: fixed;
+        z-index: 222;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        transition: all .14s linear;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    .nav_menu {
+        width: 100%;
+        max-width: 500px;
+        background: #FFF;
+        padding: 29px 75px;
+        overflow-y: auto;
+        height: 100%;
+
+        .menu_content {
+            height: calc(100% - 49px);
+
+            .menu_lists {
+                margin-top: 50px;
+                gap: 25px;
+
+                a {
+                    color: #223A67;
+                }
+
+                .drop_icon {
+                    cursor: pointer;
+                    transition: all .3s linear;
+
+                    &.rotate {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+
+
+            .menu_child {
+                margin-top: 25px;
+                gap: 25px;
+                padding-left: 25px;
+                display: flex;
+
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            .child_link_content {
+                display: none;
+            }
+        }
+    }
+
+    .select_lang {
+        margin-top: 25px;
+
+        form {
+            gap: 0 15px;
+        }
+
+        label {
+            position: relative;
+
+            span {
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+
+        input[type=radio] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        input[type=radio]:checked~span {
+            opacity: 1;
+        }
+    }
+}
