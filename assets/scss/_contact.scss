@@ -4,9 +4,11 @@
     border-top: 1px solid #E1E8F2;
     border-bottom: 1px solid #E1E8F2;
     background: #FFF;
+
     .contact_top {
         gap: 7px 0;
     }
+
     .forms_content {
         width: 100%;
         max-width: 400px;
@@ -78,16 +80,27 @@
             margin-top: -5px;
         }
     }
-    
+
 
 }
 
 .contact_card {
     padding-top: 100px;
     padding-bottom: 100px;
-    .buttons_contact{
-       padding-left: 35px;
-       gap: 8px;
+    .contact_right{
+        @media (max-width:1600px) {
+            width: 60%;
+        }
+        .carta{ 
+            @media (max-width:1600px) {
+            width: 100%;
+            iframe{width: 100%;}
+        };
+        }
+    }
+    .buttons_contact {
+        padding-left: 35px;
+        gap: 8px;
     }
 }
 
@@ -102,8 +115,26 @@
         gap: 5px 0;
         width: 50%;
         flex: 0 0 auto;
-        &:nth-child(1){
+
+        &:nth-child(1) {
             width: 49%;
+        }
+
+        .text_24_6 {
+            @media (max-width:1600px) {
+                font-size: 18px;
+            }
+        }
+        .text_18_6 {
+            @media (max-width:1600px) {
+                font-size: 15px;
+                br{display: none;}
+            }
+        }
+        .contact_action{
+            @media (max-width:1600px) {
+                font-size: 14px;
+            }
         }
     }
 }

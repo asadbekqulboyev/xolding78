@@ -18,7 +18,9 @@
                 left: 25px;
                 gap: 30px 0;
                 width: 80%;
-
+                @media ($laptop) {
+                    width: 100%;
+                }
                     .hero_title {
                         color: #FFF;
                         text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
@@ -26,6 +28,9 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 84px;
+                        @media ($laptop) {
+                            font-size: 70px;
+                        }
                     }
 
                     .hero_title_sm {
