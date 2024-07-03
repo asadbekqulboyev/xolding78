@@ -4,19 +4,38 @@
 
     .footer_content {
         padding-bottom: 50px;
-
+        @media ($laptop) {
+            // justify-content: bet\ !important;
+            flex-wrap: wrap;
+            gap:35px 0 ;
+        }
         .footer_item {
             flex: 0 0 auto;
-
-            // width: calc(26% - 10px);
+            @media ($tablet) {
+                justify-content: center;
+                width: 100%;
+            }
             &:nth-child(2) {
                 flex: 0 0 auto;
                 width: 35%;
+                @media ($laptop) {
+                    width: 40%;
+                }
+                @media ($tablet) {
+                    width: 100%;
+                    justify-content: center;
+                    align-items:center;
+                }
             }
 
             &:nth-child(1) {
                 width: calc(21.5% - 10px);
-
+                @media ($laptop) {
+                    width: calc(29% - 10px) ;
+                }
+                @media ($tablet) {
+                    width: 100%;
+                }
                 .item_links {
                     margin-top: 25px;
                 }
@@ -24,7 +43,9 @@
 
             &:nth-child(3) {
                 width: 20%;
-
+                @media ($tablet) {
+                    width: 100%;
+                }
                 .item_links {
                     margin-top: 0;
                 }
@@ -45,14 +66,31 @@
                 line-height: 28.6px;
             }
 
-            .item_title {
+            .item_title {cursor: pointer;
                 color: #fff;
+                @media ($laptop) {
+                 font-size:20px;
+                }
+                @media ($tablet){
+                 text-align: center;
+                 @media($tablet){
+                    justify-content: center;
+                 }
+                 }
             }
-
+            .slide_to{
+                @media($tablet){
+                    display: none;
+                }
+            }
             .item_links {
                 gap: 15px 0;
                 margin-top: 15px;
-
+                @media ($tablet){
+                justify-content: center;
+                align-items:center;
+                text-align: center;
+                }
                 a {
                     color: #ffffff;
                 }
@@ -63,7 +101,13 @@
     .footer_bottom {
         padding: 32px 0 0;
         border-top: 1px solid rgba(255, 255, 255, 0.30);
-
+        .container{
+         @media ($tablet) {
+            gap: 15px 0;
+            flex-direction: column;
+        }    
+        }
+       
         .bottom_item,
         a {
             color: rgba(255, 255, 255, 0.60);

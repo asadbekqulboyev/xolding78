@@ -229,7 +229,7 @@
                         <div class="type_img">
                             <img src="./assets/image/type1.png" alt="">
                         </div>
-                        <div class=" text_18_6">Производство</div>
+                        <div class="type_title text_18_6">Производство</div>
                     </a>
                     <a href="" class="type flex column">
                         <div class="type_img">
@@ -283,6 +283,7 @@
                 </div>
                 <div class="slide_object">
                    <div class="objects flex wrap between">
+                    <!-- 1 -->
                     <div class="object flex between">
                         <div class="object_left flex column between">
                             <div class="object_left_title">
@@ -384,15 +385,17 @@
                     </div>
                 </div>  
                 </div>
+                <div class="pagination_loc flex center a_center"></div>
                
             </div>
         </section>
         <section class="contact wow animate__animated animate__fadeInUp">
             <div class="contact_top flex column">
-                <div class="contact_action text_center text_18_6">Нужна помощь в подборе помещения?</div>
-                <h2 class="section_title text_center">Оставьте заявку и мы свяжемся с Вами</h2>
+                <div class="contact_action text_center text_18_6"> <div class="container"> Нужна помощь в подборе помещения?</div> </div>
+                <h2 class="section_title text_center"> <div class="container"> Оставьте заявку и мы свяжемся с Вами</div> </h2>
             </div>
-            <div class="form_content flex center a_center">
+            <div class="container">
+                <div class="form_content flex center a_center">
                 <form class="forms flex column">
                     <!-- item 1 -->
                     <label class="form_item">
@@ -422,23 +425,25 @@
                     </label>
                 </form>
             </div>
+            </div>
+            
         </section>
         <section class="features wow animate__animated animate__fadeInUp">
             <div class="container">
                 <h2 class="section_title text_center">Мы не просто предоставляем площадь</h2>
                 <div class="features_lists">
-                    <div class="features_lists_top flex between">
+                    <div class="features_lists_top flex between wrap">
                         <!-- 1 -->
-                        <div class="features_item flex column">
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature1.svg" alt="">
                             </div>
-                            <div class="features_item_title text_18_6">
+                            <div class="features_item_title text_18_6 ">
                                 Опыт и профессионализм
                             </div>
                         </div>
                         <!-- 2 -->
-                        <div class="features_item flex column">
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature2.svg" alt="">
                             </div>
@@ -465,7 +470,7 @@
                             </div>
                         </div>
                         <!-- 5 -->
-                        <div class="features_item flex column">
+                        <div class="features_item flex column hidden show" >
                             <div class="features_icon">
                                 <img src="./assets/image/feature5.svg" alt="">
                             </div>
@@ -474,7 +479,7 @@
                             </div>
                         </div>
                         <!-- 7 -->
-                        <div class="features_item flex column">
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature6.svg" alt="">
                             </div>
@@ -482,9 +487,7 @@
                                 Круглосуточная работа
                             </div>
                         </div>
-                    </div>
-                    <div class="features_lists_bottom flex between">
-                        <!-- 1 -->
+                        <!-- 8 -->
                         <div class="features_item flex column">
                             <div class="features_icon">
                                 <img src="./assets/image/feature7.svg" alt="">
@@ -493,8 +496,8 @@
                                 Охрана и безопасность, системы видеонаблюдения
                             </div>
                         </div>
-                        <!-- 2 -->
-                        <div class="features_item flex column">
+                        <!-- 9 -->
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature8.svg" alt="">
                             </div>
@@ -502,8 +505,8 @@
                                 Развитая инфраструктура
                             </div>
                         </div>
-                        <!-- 3 -->
-                        <div class="features_item flex column">
+                        <!-- 10 -->
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature9.svg" alt="">
                             </div>
@@ -511,7 +514,7 @@
                                 Разные районы и любые бюджеты
                             </div>
                         </div>
-                        <!-- 4 -->
+                        <!-- 11 -->
                         <div class="features_item flex column">
                             <div class="features_icon">
                                 <img src="./assets/image/feature10.svg" alt="">
@@ -520,8 +523,8 @@
                                 IT -поддержка
                             </div>
                         </div>
-                        <!-- 5 -->
-                        <div class="features_item flex column">
+                        <!-- 12 -->
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature11.svg" alt="">
                             </div>
@@ -529,8 +532,8 @@
                                 Стабильность и уверенность в завтрашнем дне
                             </div>
                         </div>
-                        <!-- 7 -->
-                        <div class="features_item flex column">
+                        <!-- 13 -->
+                        <div class="features_item flex column hidden show">
                             <div class="features_icon">
                                 <img src="./assets/image/feature12.svg" alt="">
                             </div>
@@ -539,6 +542,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="flex all_content"><span>Смотреть все преимущества</span> <img src="./assets/image/icon_all_content.svg" alt=""></div>
                 </div>
             </div>
         </section>
@@ -785,24 +789,31 @@
             <div class="container">
                 <div class="footer_content flex between">
                     <div class="footer_item">
-                        <div class="text_24_6 item_title">Типы помещений</div>
-                        <ul class="item_links flex column">
+                        <div class="text_24_6 item_title flex "><span>Типы помещений</span> <img src="./assets/image/f_drop.svg" alt="" class="mobile"></div>
+                        <div class="slide_to">
+                         <ul class="item_links flex column">
                             <li><a href="">Производство</a></li>
                             <li><a href="">Склады</a></li>
                             <li><a href="">Офисы</a></li>
                             <li><a href="">Открытые площадки</a></li>
                             <li><a href="">Пищевые производства</a></li>
-                        </ul>
+                         </ul>
+                        </div>
+                        
                     </div>
                     <div class="footer_item">
-                        <div class="text_24_6 item_title">Объекты</div>
-                        <ul class="item_links flex column">
+                        <div class="text_24_6 item_title flex a_center "><span>Объекты</span> <img src="./assets/image/f_drop.svg" alt="" class="mobile">
+                        </div>
+                        <div class="slide_to">
+                         <ul class="item_links  flex column">
                             <li><a href="">Индустриальный Парк «Стройполимер - Холдинг 78»</a></li>
                             <li><a href="">Индустриальный Парк «Тельмана - Холдинг 78»</a></li>
                             <li><a href="">Индустриальный Парк «Севастьянова 23 - Холдинг 78»</a></li>
                             <li><a href="">Индустриальный Парк «Предпортовый - Холдинг 78»</a></li>
                             <li><a href="">Складской комплекс «Парнас - Холдинг 78»</a></li>
-                        </ul>
+                         </ul>
+                        </div>
+                        
                     </div>
                     <div class="footer_item">
                         <ul class="item_links flex column">

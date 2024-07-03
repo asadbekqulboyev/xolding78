@@ -10,6 +10,7 @@
         gap: 25px 0;
         }
         @media ($tablet) {
+            gap: 5px 0;
             padding-top: 20px;
         }
 
@@ -24,15 +25,13 @@
         padding: 12px;
         flex: 0 0 auto;
         }
-        @media ($laptop) {
-            padding: 12px;
-        }
         @media ($tablet) {
         width: 100%;
         flex-direction: row !important;
-        gap: 6px 10px;
+        gap: 5px 10px;
         padding: 10px;
         align-items:center;
+        
         }
         .type_img{
             width: 100%;
@@ -48,12 +47,19 @@
                 @media ($laptop) {
                     height: auto;
                 }
+                @media ($tablet){
+                    width: 80px;
+                    height:60px ;
+                }
             }
         }
         .type_title{
             color:#223A67;
             @media ($laptop) {
                 font-size: 16px;
+            }
+            @media ($tablet){
+                font-size: 15px;
             }
         }
         &:hover{
