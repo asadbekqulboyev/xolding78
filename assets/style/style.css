@@ -27,7 +27,8 @@
 .header.light .header_left a {
   color: #223A67;
 }
-.header.light .header_right a, .header.light .header_right select {
+.header.light .header_right a,
+.header.light .header_right select {
   color: #223A67;
 }
 .header .header_left {
@@ -287,8 +288,8 @@
 .select_lang {
   margin-top: 25px;
 }
-.select_lang .text_bluedark {
-  color: #223A67;
+.select_lang a.text_bluedark.text_24_6 {
+  color: #223A67 !important;
 }
 .select_lang form {
   gap: 0 15px;

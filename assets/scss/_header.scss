@@ -7,93 +7,112 @@
     background: none;
     width: 100%;
     z-index: 787898987;
-    transition:.2s all linear;
+    transition: .2s all linear;
     background: #00000000;
+
     @media ($tablet) {
-        padding: 5px 0 ;
+        padding: 5px 0;
     }
-    .container{
-     @media ($tablet) {
-        flex-direction: row-reverse;
-    }   
+
+    .container {
+        @media ($tablet) {
+            flex-direction: row-reverse;
+        }
     }
-    
-    &.light{
+
+    &.light {
         background: #FFF;
-        .header_left{
-          a{
-            color: #223A67;
-        }  
+
+        .header_left {
+            a {
+                color: #223A67;
+            }
         }
-        .header_right{
-         a,select{
-            color: #223A67;
-         }
+
+        .header_right {
+
+            a,
+            select {
+                color: #223A67;
+            }
         }
     }
+
     .header_left {
         gap: 0 50px;
         align-items: center;
         flex: 0 0 auto;
         width: 33.33%;
+
         @media ($laptop) {
             gap: 0 15px;
-            .desctop{
+
+            .desctop {
                 font-size: 15px;
             }
         }
+
         @media (max-width:1200px) {
             gap: 0 10px;
             width: fit-content;
         }
-        a{
+
+        a {
             color: #FFF;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            line-height:28.8px;
+            line-height: 28.8px;
             transition: .2s linear;
         }
+
         .burger_icon {
             line-height: 0;
             cursor: pointer;
-            .mobile1{
+
+            .mobile1 {
                 @media ($tablet) {
-                display: block;
-                }
-            }
-            .mobile2{
-                display: none;
-            } 
-            @media ($tablet) {
-              &.active{
-                .mobile2{
                     display: block;
-                } 
-                .mobile1{
-                    display: none;
                 }
-            }  
             }
-            
+
+            .mobile2 {
+                display: none;
+            }
+
+            @media ($tablet) {
+                &.active {
+                    .mobile2 {
+                        display: block;
+                    }
+
+                    .mobile1 {
+                        display: none;
+                    }
+                }
+            }
+
             svg {
                 transition: all .2s linear;
                 line-height: 0;
-                path{
+
+                path {
                     fill: white;
                     stroke: white;
                 }
             }
-            &.light{
-                svg path{
-                    stroke:#223A67;
+
+            &.light {
+                svg path {
+                    stroke: #223A67;
                     fill: #223A67;
-                } 
+                }
             }
         }
 
         .exit_menu {
             cursor: pointer;
+
             @media ($tablet) {
                 display: none;
             }
@@ -103,15 +122,18 @@
     .logo {
         flex: 0 0 auto;
         width: 32%;
+
         @media ($laptop) {
-            width:fit-content;
-            
+            width: fit-content;
+
         }
-        img{
+
+        img {
             @media (max-width:1200px) {
                 width: 152px;
-               }
+            }
         }
+
         a {
             display: flex;
             justify-content: center;
@@ -124,12 +146,15 @@
         flex: 0 0 auto;
         width: 33.33%;
         justify-content: flex-end;
+
         @media ($laptop) {
             gap: 0 15px;
         }
+
         @media (max-width:1200px) {
             width: fit-content;
-           }
+        }
+
         a {
             color: #FFF;
             font-size: 24px;
@@ -137,21 +162,26 @@
             font-weight: 600;
             line-height: 31.2px;
             transition: .2s linear;
+
             @media (max-width:1200px) {
-               font-size: 18px;
-              }
-              @media (max-width:1200px) {
                 font-size: 18px;
-               }
+            }
+
+            @media (max-width:1200px) {
+                font-size: 18px;
+            }
         }
+
         .form_lang {
-        gap: 0 5px;
-        @media (max-width:1200px) {
-          display: none;
-        }
-        span{
-            line-height: 0;
-        }
+            gap: 0 5px;
+
+            @media (max-width:1200px) {
+                display: none;
+            }
+
+            span {
+                line-height: 0;
+            }
         }
 
         select {
@@ -168,31 +198,36 @@
             transition: .2s linear;
 
         }
-        .icons_select{
-            svg path{
-                stroke:white;
+
+        .icons_select {
+            svg path {
+                stroke: white;
                 transition: all .2s linear;
             }
-            &.light{
-                svg path{
-                    stroke:#223A67;
+
+            &.light {
+                svg path {
+                    stroke: #223A67;
                 }
             }
 
         }
-        .mobile{
+
+        .mobile {
             line-height: 0;
-            svg path{
-             fill: white;
-             stroke: white;
-             transition: all .2s linear;
+
+            svg path {
+                fill: white;
+                stroke: white;
+                transition: all .2s linear;
             }
-         &.light{
-            svg path{
-                fill: #223A67;
-                stroke: #223A67;
-               }
-         }
+
+            &.light {
+                svg path {
+                    fill: #223A67;
+                    stroke: #223A67;
+                }
+            }
         }
     }
 
@@ -205,9 +240,11 @@
         left: -100%;
         height: 100vh;
         transition: all .14s linear;
+
         @media ($tablet) {
             top: 60px;
         }
+
         &.active {
             left: 0;
         }
@@ -220,22 +257,28 @@
         padding: 29px 75px;
         overflow-y: auto;
         height: 100%;
+
         @media ($tablet) {
-           max-width: 100%;
+            max-width: 100%;
         }
+
         .menu_content {
             height: calc(100% - 49px);
+
             @media ($tablet) {
-                align-items:center;
+                align-items: center;
             }
+
             .menu_lists {
                 margin-top: 50px;
                 gap: 25px;
+
                 @media ($tablet) {
                     margin-top: 0;
                     width: fit-content;
-                    align-items:center;
+                    align-items: center;
                 }
+
                 a {
                     color: #223A67;
                 }
@@ -244,28 +287,34 @@
                     cursor: pointer;
                     transition: all .3s linear;
                     line-height: 0;
+
                     &.rotate {
                         transform: rotate(180deg);
                     }
                 }
             }
+
             .menu_child {
                 margin-top: 25px;
                 gap: 25px;
                 padding-left: 25px;
                 display: flex;
+
                 @media ($tablet) {
                     justify-content: center;
                     padding-left: 0;
-                    li{
+
+                    li {
                         text-align: center !important;
-                      
+
                     }
                 }
+
                 a {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
+
                     @media ($tablet) {
                         text-align: center;
                     }
@@ -278,13 +327,16 @@
         }
     }
 
-   
+
 }
+
 .select_lang {
     margin-top: 25px;
-    .text_bluedark{
-        color: #223A67;
+
+    a.text_bluedark.text_24_6 {
+        color: #223A67 !important;
     }
+
     form {
         gap: 0 15px;
     }
