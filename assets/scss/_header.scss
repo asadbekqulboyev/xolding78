@@ -6,7 +6,7 @@
     top: 0;
     background: none;
     width: 100%;
-    z-index: 111;
+    z-index: 787898987;
     transition:.2s all linear;
     background: #00000000;
     @media ($tablet) {
@@ -57,11 +57,31 @@
         .burger_icon {
             line-height: 0;
             cursor: pointer;
+            .mobile1{
+                @media ($tablet) {
+                display: block;
+                }
+            }
+            .mobile2{
+                display: none;
+            } 
+            @media ($tablet) {
+              &.active{
+                .mobile2{
+                    display: block;
+                } 
+                .mobile1{
+                    display: none;
+                }
+            }  
+            }
+            
             svg {
                 transition: all .2s linear;
                 line-height: 0;
                 path{
                     fill: white;
+                    stroke: white;
                 }
             }
             &.light{
@@ -74,6 +94,9 @@
 
         .exit_menu {
             cursor: pointer;
+            @media ($tablet) {
+                display: none;
+            }
         }
     }
 
@@ -161,11 +184,13 @@
             line-height: 0;
             svg path{
              fill: white;
+             stroke: white;
              transition: all .2s linear;
             }
          &.light{
             svg path{
                 fill: #223A67;
+                stroke: #223A67;
                }
          }
         }
@@ -180,7 +205,9 @@
         left: -100%;
         height: 100vh;
         transition: all .14s linear;
-
+        @media ($tablet) {
+            top: 60px;
+        }
         &.active {
             left: 0;
         }
@@ -193,14 +220,22 @@
         padding: 29px 75px;
         overflow-y: auto;
         height: 100%;
-
+        @media ($tablet) {
+           max-width: 100%;
+        }
         .menu_content {
             height: calc(100% - 49px);
-
+            @media ($tablet) {
+                align-items:center;
+            }
             .menu_lists {
                 margin-top: 50px;
                 gap: 25px;
-
+                @media ($tablet) {
+                    margin-top: 0;
+                    width: fit-content;
+                    align-items:center;
+                }
                 a {
                     color: #223A67;
                 }
@@ -208,25 +243,32 @@
                 .drop_icon {
                     cursor: pointer;
                     transition: all .3s linear;
-
+                    line-height: 0;
                     &.rotate {
                         transform: rotate(180deg);
                     }
                 }
             }
-
-
-
             .menu_child {
                 margin-top: 25px;
                 gap: 25px;
                 padding-left: 25px;
                 display: flex;
-
+                @media ($tablet) {
+                    justify-content: center;
+                    padding-left: 0;
+                    li{
+                        text-align: center !important;
+                      
+                    }
+                }
                 a {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 16px;
+                    @media ($tablet) {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -236,29 +278,32 @@
         }
     }
 
-    .select_lang {
-        margin-top: 25px;
+   
+}
+.select_lang {
+    margin-top: 25px;
+    .text_bluedark{
+        color: #223A67;
+    }
+    form {
+        gap: 0 15px;
+    }
 
-        form {
-            gap: 0 15px;
+    label {
+        position: relative;
+
+        span {
+            opacity: 0.7;
+            cursor: pointer;
         }
+    }
 
-        label {
-            position: relative;
+    input[type=radio] {
+        position: absolute;
+        opacity: 0;
+    }
 
-            span {
-                opacity: 0.7;
-                cursor: pointer;
-            }
-        }
-
-        input[type=radio] {
-            position: absolute;
-            opacity: 0;
-        }
-
-        input[type=radio]:checked~span {
-            opacity: 1;
-        }
+    input[type=radio]:checked~span {
+        opacity: 1;
     }
 }
