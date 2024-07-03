@@ -1,31 +1,93 @@
 .our_objects {
     padding: 100px 0;
-
+    @media ($tablet) {
+        padding-top: 50px;
+    }
     .top_content {
         gap: 48px;
+        @media ($tablet) {
+        gap:25px 0 ;
+        } 
+        .button.light{
+            @media ($tablet) {
+                width: 100%;
+            }
+            .text_18_6{
+                @media ($tablet) {
+                    line-height: normal;
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
 
 .objects {
     padding-top: 50px;
     gap: 22px 0;
-
+    // @media ($laptop) {
+    //  flex-direction: column;
+    // }
+    // flex-direction: column;
     .object {
         border: 1px solid #E1E8F2;
         padding: 25px;
         width: calc(50% - 12.5px);
         background: #fff;
+        @media (max-width:1490px) {
+            padding: 20px;
+        }
+        @media ($tablet) {
+            flex-direction: column;
+            gap: 20px 0;
+        }
+        .object_left {
+            width: calc(50% - 15px);
+            @media ($tablet) {
+                width: 100%;
+            }
+            .object_btn{
+                @media (max-width:1490px) {
+                    padding: 5px;
+                    font-size: 12px;
+                    width: 100%;
+                    .button{
+                    width: 100%;
+                    padding: 10px;
+                    }
+                }
+                @media ($tablet) {
+                    width: 100%;
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         .object_title {
             color: #223A67;
             font-size: 32px;
             font-style: normal;
             font-weight: 600;
             line-height: 45.6px;
+            @media (max-width:1490px) {
+                font-size: 25px;
+            }
         }
+
         .object_img {
             height: 100%;
             line-height: 0;
+            @media (max-width:1490px) {
+            width: calc(50% - 15px);
+                
+            }
+            @media ($tablet) {
+                width: 100%;
+            }
             img {
+                width: 100%;
                 object-fit: cover;
                 height: 100%;
             }

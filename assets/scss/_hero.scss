@@ -2,25 +2,58 @@
     padding-bottom: 78px;
     width: 100%;
     overflow: hidden;
+    padding-bottom: 0;
+
+    .container.btns {
+        @media ($tablet) {
+            position: relative;
+        }
+
+        .btn_slide {
+            width: 50px;
+            height: 50px;
+            flex: 0 0 auto;
+        }
+    }
+
     .hero_content {
         width: 100%;
-        height:100vh;
+        height: 100vh;
+
         .hero_bg {
             width: 100%;
             height: 100%;
             background: linear-gradient(96deg, rgba(0, 0, 0, 0.50) 6.81%, rgba(0, 0, 0, 0.40) 98.24%) no-repeat;
+            @media ($tablet) {
+                background: linear-gradient(166deg, rgba(0, 0, 0, 0) 6.81%, rgb(0, 0, 0) 98.24%) no-repeat;
+            }
             .container {
                 height: 100%;
                 position: relative;
-            .hero_info {
-                position: absolute;
-                bottom:86px;
-                left: 25px;
-                gap: 30px 0;
-                width: 80%;
-                @media ($laptop) {
-                    width: 100%;
-                }
+
+                .hero_info {
+                    position: absolute;
+                    bottom: 86px;
+                    left: 25px;
+                    gap: 30px 0;
+                    width: 80%;
+
+                    @media ($laptop) {
+                        width: 100%;
+                        gap: 20px 0;
+                    }
+
+                    @media ($tablet) {
+                        gap: 10px 0;
+                        bottom: 158px
+                    }
+
+                    .button {
+                        @media ($tablet) {
+                            margin-top: 39px;
+                        }
+                    }
+
                     .hero_title {
                         color: #FFF;
                         text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
@@ -28,8 +61,15 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: 84px;
+
                         @media ($laptop) {
-                            font-size: 70px;
+                            line-height: 70px;
+                            font-size: 55px;
+                        }
+
+                        @media ($tablet) {
+                            line-height: 33.6px;
+                            font-size: 32px;
                         }
                     }
 
@@ -49,52 +89,86 @@
                         color: #223A67;
                         line-height: normal;
                     }
-                .hero_action {
-                color: #FFF;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 31.2px;
-                 }
+
+                    .hero_action {
+                        color: #FFF;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 31.2px;
+
+                        @media ($tablet) {
+                            font-size: 18px;
+                            line-height: 23.4px;
+                        }
+                    }
                 }
+            }
+        }
+    }
+
+    .btn_container {
+        @media ($tablet) {
+            top: auto;
+            bottom: 68px;
+            width: fit-content;
+            left: 0;
+            right: auto;
+            gap: 0 10px;
+        }
+    }
+}
+
+.swiper-pagination {
+    padding: 0px 17px 32px 17px;
+    &.top {
+        bottom: -20px;
+        z-index: 22;
+    }
+
+    &.bottom {
+        position: absolute;
+        bottom: 19px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        gap: 5px;
+
+        @media ($tablet) {
+            left: 0px;
+            right: auto;
+            bottom:-5px;
+        }
+
+        .swiper-pagination-bullet {
+            height: 4px;
+            border: none;
+            outline: none;
+            width: 18px;
+            border-radius: 0;
+            background: rgba(255, 255, 255, 0.30);
+            border-radius: 2px;
+            flex: 0 0 auto;
+            padding: 0;
+
+            @media ($tablet) {
+                width: 8px;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 36px;
+            height: 4px;
+            background: #fff;
+            @media ($tablet) {
+                width: 20px;
             }
         }
     }
 }
 
-.swiper-pagination{
-    padding:0px 17px 32px 17px;
-    &.top{
-        bottom: -20px;
-        z-index: 22;
-    }
-    &.bottom{
-    position: absolute;    
-    bottom: 19px; 
-    left: 0 ; 
-    right: 0;   
-    margin: 0 auto;   
-    gap: 5px;
-    .swiper-pagination-bullet{
-        height: 4px ;
-        border:none;
-        outline: none;
-        width:18px ;
-        border-radius:0;
-        background: rgba(255, 255, 255, 0.30);
-        border-radius: 2px;
-        flex: 0 0 auto;
-        padding: 0;
-    }
-    .swiper-pagination-bullet-active{
-        width: 36px;
-        height: 4px ;
-        background: #fff;
-    }
-    }
-}
-.swiper-pagination-bullet{
-    cursor:pointer;
+.swiper-pagination-bullet {
+    cursor: pointer;
     display: flex;
     width: 8px;
     height: 8px;
@@ -102,11 +176,12 @@
     background: rgba(255, 255, 255, 0.30);
     opacity: 1;
     margin: 0;
-    
+
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     outline: 1px solid #fff;
-    border:4px solid #6d6c6c ;
+    border: 4px solid #6d6c6c;
     padding: 4px;
     background: rgb(255, 255, 255);
 }

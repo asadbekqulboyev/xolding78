@@ -87,29 +87,55 @@
 .contact_card {
     padding-top: 100px;
     padding-bottom: 100px;
+    @media ($tablet) {
+        padding-top: 50px;
+    padding-bottom:50px;
+    }
     .contact_right{
         @media (max-width:1600px) {
             width: 60%;
+        }
+        @media ($tablet) {
+           width: 100%; 
+           margin-top: 25px;
         }
         .carta{ 
             @media (max-width:1600px) {
             width: 100%;
             iframe{width: 100%;}
         };
+        
         }
     }
     .buttons_contact {
         padding-left: 35px;
         gap: 8px;
+        @media ($tablet) {
+            width: 100%;
+        }
+    }
+    @media ($tablet) {
+        padding-top: 50px;
     }
 }
 
 .contact_component {
     margin-top: 50px;
+    @media ($tablet) {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
 }
 
 .contact_items {
     gap: 25px 2px;
+    @media ($tablet) {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap: 15px 0;
+    }
 
     .contact_item {
         gap: 5px 0;
@@ -118,6 +144,9 @@
 
         &:nth-child(1) {
             width: 49%;
+            @media ($tablet) {
+                width: 100%;
+            }
         }
 
         .text_24_6 {
@@ -130,11 +159,21 @@
                 font-size: 15px;
                 br{display: none;}
             }
+            @media ($tablet) {
+                text-align: center;
+            }
         }
         .contact_action{
             @media (max-width:1600px) {
                 font-size: 14px;
             }
+        }
+        @media ($tablet) {
+            width: 100%;
+            justify-content: center;
+            align-items:center;
+            gap: 2px 0;
+
         }
     }
 }

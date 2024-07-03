@@ -6,13 +6,32 @@
         gap: 0 ;
     }
     .features_lists_top{
+        @media ($laptop) {
+           flex-wrap: wrap;
+           gap: 25px 0;
+        }
+        @media ($tablet) {
+            gap: 10px 0;
+            flex-direction: column;
+        }
         .features_item_title{
             line-height: 30px;
             margin-top: 5px;
+            @media ($tablet) {
+                font-size: 15px;
+            }
         }
     }
     .features_lists_bottom{
     margin-top:25px;
+    @media ($laptop) {
+        gap: 25px 0;
+        flex-wrap: wrap;
+     }
+     @media ($tablet) {
+        gap: 10px 0;
+        margin-top:10px;
+     }
     }
 
     .features_item{
@@ -23,6 +42,13 @@
         border-left: 1px solid #E1E8F2;
         border-top: 1px solid #223A67;
         background: #FFF;    
+        @media ($laptop) {
+            width: calc(33.33% - 7.5px);
+        }
+        @media ($tablet) {
+            width: 100%;
+            padding: 20px;
+        }
         .features_item_title{
             line-height: 28.8px;
         }

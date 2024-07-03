@@ -7,22 +7,40 @@
             background: #FFF;
             padding: 35px;
             min-height: 490px;
+            @media ($tablet) {
+                padding: 25px 20px;
+            }
             .slide_icon{
                 line-height: 0;
             }
             .slide_description {
                 margin-top: 20px;
                 line-height: 28.8px;
+                @media($tablet){
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height:23.8px;
+                }
             }
 
             .slide_bottom {
                 gap: 0 20px;
+                @media ($tablet) {
+                    gap: 15px 0;
+                    flex-direction: column;
+                }
             }
-
+            .logo_company{
+                line-height: 0;
+            }
             .info_company {
                 color: #7C8BA7;
                 font-size: 14px;
                 line-height: 21px;
+                @media ($tablet) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
             }
         }
     }

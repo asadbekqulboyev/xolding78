@@ -1,7 +1,19 @@
 .choose_type{
     padding-top: 100px;
+    @media ($tablet) {
+    padding-top: 50px;
+    }
     .types{
         padding-top: 50px;
+        @media ($laptop) {
+        flex-wrap: wrap;
+        gap: 25px 0;
+        }
+        @media ($tablet) {
+            padding-top: 20px;
+        }
+
+        
     }
     .type{
         padding: 25px;
@@ -9,11 +21,26 @@
         gap: 15px 0;
         transition: all .2s linear;
         @media ($laptop) {
+        padding: 12px;
+        flex: 0 0 auto;
+        }
+        @media ($laptop) {
             padding: 12px;
+        }
+        @media ($tablet) {
+        width: 100%;
+        flex-direction: row !important;
+        gap: 6px 10px;
+        padding: 10px;
+        align-items:center;
         }
         .type_img{
             width: 100%;
             line-height: 0;
+            @media ($tablet) {
+            width: 80px;
+            flex: 0 0 auto;
+            }
             img{
                 width: 100%;
                 object-fit: contain;

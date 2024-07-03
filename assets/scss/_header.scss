@@ -9,6 +9,15 @@
     z-index: 111;
     transition:.2s all linear;
     background: #00000000;
+    @media ($tablet) {
+        padding: 5px 0 ;
+    }
+    .container{
+     @media ($tablet) {
+        flex-direction: row-reverse;
+    }   
+    }
+    
     &.light{
         background: #FFF;
         .header_left{
@@ -29,6 +38,13 @@
         width: 33.33%;
         @media ($laptop) {
             gap: 0 15px;
+            .desctop{
+                font-size: 15px;
+            }
+        }
+        @media (max-width:1200px) {
+            gap: 0 10px;
+            width: fit-content;
         }
         a{
             color: #FFF;
@@ -50,6 +66,7 @@
             }
             &.light{
                 svg path{
+                    stroke:#223A67;
                     fill: #223A67;
                 } 
             }
@@ -67,6 +84,11 @@
             width:fit-content;
             
         }
+        img{
+            @media (max-width:1200px) {
+                width: 152px;
+               }
+        }
         a {
             display: flex;
             justify-content: center;
@@ -82,6 +104,9 @@
         @media ($laptop) {
             gap: 0 15px;
         }
+        @media (max-width:1200px) {
+            width: fit-content;
+           }
         a {
             color: #FFF;
             font-size: 24px;
@@ -89,9 +114,18 @@
             font-weight: 600;
             line-height: 31.2px;
             transition: .2s linear;
+            @media (max-width:1200px) {
+               font-size: 18px;
+              }
+              @media (max-width:1200px) {
+                font-size: 18px;
+               }
         }
         .form_lang {
         gap: 0 5px;
+        @media (max-width:1200px) {
+          display: none;
+        }
         span{
             line-height: 0;
         }
@@ -122,6 +156,18 @@
                 }
             }
 
+        }
+        .mobile{
+            line-height: 0;
+            svg path{
+             fill: white;
+             transition: all .2s linear;
+            }
+         &.light{
+            svg path{
+                fill: #223A67;
+               }
+         }
         }
     }
 

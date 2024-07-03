@@ -37,8 +37,17 @@ body {
     margin: 0 auto;
     max-width: 1820px;
     padding: 0 25px;
+
     @media (max-width:1400px) {
         max-width: 1200px;
+    }
+
+    @media (max-width:1200px) {
+        max-width: 768px;
+    }
+
+    @media (max-width:768px) {
+        max-width: 360px;
     }
 }
 
@@ -93,6 +102,10 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 49.4px;
+    @media ($tablet) {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
 }
 
 .text_center {
@@ -101,7 +114,7 @@ body {
 
 // slide btn
 .btn_container {
-    width:100% ;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -170,7 +183,7 @@ body {
     position: fixed;
     bottom: 100px;
     z-index: 2;
-    right: 75px;
+    right: 50px;
 
     a {
         width: 70px;
@@ -179,6 +192,29 @@ body {
         background: #00E709;
     }
 }
-.mt_15{
+
+.mt_15 {
     margin-top: 25px;
+}
+
+.desctop {
+    display: block;
+
+    @media ($tablet) {
+        display: none;
+    }
+}
+.desctop_flex{
+    display: flex;
+
+    @media ($tablet) {
+        display: none;
+    }
+}
+.mobile {
+    display: none;
+
+    @media ($tablet) {
+        display: block;
+    }
 }
