@@ -800,7 +800,7 @@
 @media (max-width:768px) {
   .contact_card {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
   }
 }
 @media (max-width: 1600px) {
@@ -828,7 +828,9 @@
 }
 @media (max-width:768px) {
   .contact_card .buttons_contact {
+    margin-top: 7px;
     width: 100%;
+    padding: 13px;
   }
 }
 @media (max-width:768px) {
@@ -843,7 +845,7 @@
 @media (max-width:768px) {
   .contact_component {
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
@@ -855,7 +857,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px 0;
+    gap: 12px 0;
   }
 }
 .contact_items .contact_item {
@@ -871,9 +873,20 @@
     width: 100%;
   }
 }
+@media (max-width:1400px) {
+  .contact_items .contact_item {
+    gap: 0;
+  }
+}
 @media (max-width: 1600px) {
   .contact_items .contact_item .text_24_6 {
     font-size: 18px;
+  }
+}
+@media (max-width:1400px) {
+  .contact_items .contact_item .text_24_6 {
+    line-height: 24px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1600px) {
@@ -918,7 +931,7 @@
 @media (max-width:768px) {
   .features {
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 }
 .features .features_lists {
@@ -927,7 +940,7 @@
 }
 @media (max-width:768px) {
   .features .features_lists {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 }
 .features .features_lists_top {
@@ -943,23 +956,27 @@
 .features .features_lists_top .features_item {
   display: flex;
 }
-.features .features_lists_top .features_item.show {
-  display: none;
+@media (max-width:768px) {
+  .features .features_lists_top .features_item.show {
+    display: none;
+  }
 }
-.features .features_lists_top .features_item:nth-child(3) {
-  order: -3;
-}
-.features .features_lists_top .features_item:nth-child(4) {
-  order: -2;
-}
-.features .features_lists_top .features_item:nth-child(7) {
-  order: -1;
-}
-.features .features_lists_top .features_item:nth-child(10) {
-  order: -1;
-}
-.features .features_lists_top .features_item:nth-child(2) {
-  order: 2;
+@media (max-width:768px) {
+  .features .features_lists_top .features_item:nth-child(3) {
+    order: -3;
+  }
+  .features .features_lists_top .features_item:nth-child(4) {
+    order: -2;
+  }
+  .features .features_lists_top .features_item:nth-child(7) {
+    order: -1;
+  }
+  .features .features_lists_top .features_item:nth-child(10) {
+    order: -1;
+  }
+  .features .features_lists_top .features_item:nth-child(2) {
+    order: 2;
+  }
 }
 @media (max-width:768px) {
   .features .features_lists_top .features_item {
@@ -1070,11 +1087,15 @@
 }
 @media (max-width:768px) {
   .comment .slide_content .slide_item {
-    padding: 25px 20px;
+    min-height: 460px;
+    padding: 20px 20px;
   }
 }
 .comment .slide_content .slide_item .slide_icon {
   line-height: 0;
+}
+.comment .slide_content .slide_item .slide_icon img {
+  height: 20px;
 }
 .comment .slide_content .slide_item .slide_description {
   margin-top: 20px;
@@ -1092,7 +1113,7 @@
 }
 @media (max-width:768px) {
   .comment .slide_content .slide_item .slide_bottom {
-    gap: 15px 0;
+    gap: 10px 0;
     flex-direction: column;
   }
 }
@@ -1126,11 +1147,21 @@
 .pagination {
   margin-top: 25px;
 }
+@media (max-width:768px) {
+  .pagination {
+    margin-top: 10px;
+  }
+}
 .pagination .swiper-pagination-bullet {
   border-radius: 2px;
   background: #E1E8F2;
   width: 18px;
   height: 4px;
+}
+@media (max-width:768px) {
+  .pagination .swiper-pagination-bullet {
+    width: 15px;
+  }
 }
 .pagination .swiper-pagination-bullet-active {
   border-radius: 2px;
@@ -1152,6 +1183,12 @@
   .footer .footer_content {
     flex-wrap: wrap;
     gap: 35px 0;
+  }
+}
+@media (max-width:768px) {
+  .footer .footer_content {
+    padding-bottom: 25px;
+    gap: 25px 0;
   }
 }
 .footer .footer_content .footer_item {
@@ -1250,6 +1287,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 12px 0;
   }
 }
 .footer .footer_content .footer_item .item_links a {
@@ -1261,13 +1299,19 @@
 }
 @media (max-width:768px) {
   .footer .footer_bottom .container {
-    gap: 15px 0;
+    gap: 10px 0;
     flex-direction: column;
   }
 }
 .footer .footer_bottom .bottom_item,
 .footer .footer_bottom a {
   color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width:768px) {
+  .footer .footer_bottom .bottom_item,
+  .footer .footer_bottom a {
+    font-size: 14px;
+  }
 }
 .footer .footer_bottom .bottom_item:last-child {
   gap: 0 10px;

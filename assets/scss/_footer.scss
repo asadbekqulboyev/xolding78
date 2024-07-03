@@ -5,9 +5,12 @@
     .footer_content {
         padding-bottom: 50px;
         @media ($laptop) {
-            // justify-content: bet\ !important;
             flex-wrap: wrap;
             gap:35px 0 ;
+        }
+        @media ($tablet) {
+            padding-bottom: 25px;
+            gap: 25px 0;
         }
         .footer_item {
             flex: 0 0 auto;
@@ -90,6 +93,7 @@
                 justify-content: center;
                 align-items:center;
                 text-align: center;
+                gap: 12px 0;
                 }
                 a {
                     color: #ffffff;
@@ -103,7 +107,7 @@
         border-top: 1px solid rgba(255, 255, 255, 0.30);
         .container{
          @media ($tablet) {
-            gap: 15px 0;
+            gap: 10px 0;
             flex-direction: column;
         }    
         }
@@ -111,11 +115,13 @@
         .bottom_item,
         a {
             color: rgba(255, 255, 255, 0.60);
+            @media ($tablet) {
+                font-size: 14px;
+            }
         }
 
         .bottom_item:last-child {
             gap: 0 10px;
-
             .icon_bottom {
                 line-height: 0;
             }
