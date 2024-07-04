@@ -240,11 +240,9 @@
         left: -100%;
         height: 100vh;
         transition: all .14s linear;
-
         @media ($tablet) {
             top: 60px;
         }
-
         &.active {
             left: 0;
         }
@@ -256,30 +254,29 @@
         background: #FFF;
         padding: 29px 75px;
         overflow-y: auto;
-        height: 100vh;
+        height: 100%;
         @media ($tablet) {
-            height: calc(100% - 60px);
+        height: calc(100% - 60px);
+        padding-top: 10px;
         }
-
         @media ($tablet) {
-            max-width: 100%;
+        max-width: 100%;
         }
-
         .menu_content {
-            height: 100%;
-
+        height: calc(100% - 60px);        
+ @media ($tablet) {
+    height: 100%;
+ }
             @media ($tablet) {
-                align-items: center;
+            align-items: center;
             }
-
             .menu_lists {
-                margin-top: 50px;
+                // margin-top: 50px;
                 gap: 25px;
-
                 @media ($tablet) {
-                    margin-top: 0;
-                    width: fit-content;
-                    align-items: center;
+                margin-top: 0;
+                width: fit-content;
+                align-items: center;
                 }
 
                 a {
@@ -306,7 +303,7 @@
                 @media ($tablet) {
                     justify-content: center;
                     padding-left: 0;
-
+                    gap: 15px 0;
                     li {
                         text-align: center !important;
 
@@ -323,7 +320,6 @@
                     }
                 }
             }
-
             .child_link_content {
                 display: none;
             }
@@ -336,8 +332,12 @@
 .select_lang {
     margin-top: 25px;
 
-    a.text_bluedark.text_24_6 {
+    
+    @media ($tablet) {
+        margin-top: 10px;
+        .text_bluedark.text_24_6 {
         color: #223A67 !important;
+    }
     }
 
     form {

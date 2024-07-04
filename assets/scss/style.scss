@@ -93,7 +93,15 @@ body {
 }
 
 .text_bluedark {
-    color: #223A67
+    color: #223A67;
+}
+.menu_overlay {
+    .text_bluedark {
+        color: #223A67 !important;
+        @media ($tablet) {
+        color: #223A67 !important;
+        }
+    }
 }
 
 .section_title {
@@ -218,15 +226,7 @@ body {
         display: block;
     }
 }
-// .order1{
-// order: 1;
-// }
-// .order2{
-// order: 2;
-// }
-// .order3{
-// order: 3;
-// }
-// .order4{
-// order: 2;
-// }
+.mobile_color{
+    color: #223A67 !important;
+    margin-top: 15px;
+}

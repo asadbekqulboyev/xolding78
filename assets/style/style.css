@@ -219,11 +219,12 @@
   background: #FFF;
   padding: 29px 75px;
   overflow-y: auto;
-  height: 100vh;
+  height: 100%;
 }
 @media (max-width:768px) {
   .header .nav_menu {
     height: calc(100% - 60px);
+    padding-top: 10px;
   }
 }
 @media (max-width:768px) {
@@ -232,7 +233,12 @@
   }
 }
 .header .nav_menu .menu_content {
-  height: 100%;
+  height: calc(100% - 60px);
+}
+@media (max-width:768px) {
+  .header .nav_menu .menu_content {
+    height: 100%;
+  }
 }
 @media (max-width:768px) {
   .header .nav_menu .menu_content {
@@ -240,7 +246,6 @@
   }
 }
 .header .nav_menu .menu_content .menu_lists {
-  margin-top: 50px;
   gap: 25px;
 }
 @media (max-width:768px) {
@@ -271,6 +276,7 @@
   .header .nav_menu .menu_content .menu_child {
     justify-content: center;
     padding-left: 0;
+    gap: 15px 0;
   }
   .header .nav_menu .menu_content .menu_child li {
     text-align: center !important;
@@ -293,8 +299,13 @@
 .select_lang {
   margin-top: 25px;
 }
-.select_lang a.text_bluedark.text_24_6 {
-  color: #223A67 !important;
+@media (max-width:768px) {
+  .select_lang {
+    margin-top: 10px;
+  }
+  .select_lang .text_bluedark.text_24_6 {
+    color: #223A67 !important;
+  }
 }
 .select_lang form {
   gap: 0 15px;
@@ -1474,6 +1485,15 @@ body {
   color: #223A67;
 }
 
+.menu_overlay .text_bluedark {
+  color: #223A67 !important;
+}
+@media (max-width:768px) {
+  .menu_overlay .text_bluedark {
+    color: #223A67 !important;
+  }
+}
+
 .section_title {
   color: #223A67;
   font-size: 38px;
@@ -1590,4 +1610,9 @@ body {
   .mobile {
     display: block;
   }
+}
+
+.mobile_color {
+  color: #223A67 !important;
+  margin-top: 15px;
 }/*# sourceMappingURL=style.css.map */
