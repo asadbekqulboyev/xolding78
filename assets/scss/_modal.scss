@@ -10,17 +10,35 @@
     justify-content: center;
     align-items: center;
     display: none;
-    .modal_header{
-        gap: 20px 0;
-        .exit_modal{
+          a{
+            color: #223A67;
         }
+    .thanks_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 25px 0; 
+        .section_title{
+        @media ($tablet) {
+            font-size: 24px;
+        }
+        
     }
-    .modal_title_filter_sm{
+    }
+   
+    .modal_header {
+        gap: 20px 0;
+    }
+
+    .modal_title_filter_sm {
         font-size: 22px;
     }
-    .modal_title_filter_md{
+
+    .modal_title_filter_md {
         font-size: 24px;
     }
+
     .modal_body {
         margin-top: 50px;
     }

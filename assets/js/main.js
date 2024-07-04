@@ -40,9 +40,9 @@ $(document).ready(function () {
       }
     })
     // slidetoggle links
-    $('.drop_icon').click(function (e) {
-      $(this).toggleClass('rotate');
-      $(this).parent().parent().find('.child_link_content').slideToggle();
+    $('.dropdown').click(function (e) {
+      $(this).children('.drop_icon').toggleClass('rotate');
+      $(this).parent().children('.child_link_content').slideToggle();
     });
 
   }
@@ -142,6 +142,7 @@ let slide = new Swiper('.slide_object', {
 })
 // footer toggle
 $('.item_title').click(function () {
+  console.log($(this).children('img').toggleClass('active'));
   $(this).parent('.footer_item').children('.slide_to').slideToggle()
 })
 $('.all_content').click(function () {
@@ -162,16 +163,11 @@ $('.modal#filter2').click(function(ev){
 }
 
 })
+// filter 2 exi
 $('#filter2 .exit_modal').click(function(){
  $('#filter2 ').css({display:'none'})
 })
-
-
-
-// exit modal 
-// function hideModal(){
-//   $(this).parents('.modal')
-// }
-// $('.exit_modal').click(
-//   hideModal()
-// )
+$('.forms').submit(function(e){
+  e.preventDefault()
+  $('#thank').fadeIn()
+});

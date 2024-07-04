@@ -71,6 +71,13 @@
 
             .item_title {cursor: pointer;
                 color: #fff;
+                img{
+                    transform: rotate(0);
+                    transition: all .2s linear;
+                    &.active{
+                        transform: rotate(180deg);
+                    }
+                }
                 @media ($laptop) {
                  font-size:20px;
                 }
