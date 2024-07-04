@@ -22,7 +22,9 @@ li {
 a {
     text-decoration: none;
 }
-
+button{
+    cursor: pointer;
+}
 body {
     color: #243452;
     font-family: 'Manrope';
@@ -95,11 +97,13 @@ body {
 .text_bluedark {
     color: #223A67;
 }
+
 .menu_overlay {
     .text_bluedark {
         color: #223A67 !important;
+
         @media ($tablet) {
-        color: #223A67 !important;
+            color: #223A67 !important;
         }
     }
 }
@@ -110,6 +114,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 49.4px;
+
     @media ($tablet) {
         font-size: 24px;
         line-height: 31.2px;
@@ -153,7 +158,6 @@ body {
 .button {
     padding: 15.5px 40px;
     width: fit-content;
-
     &.sm_light {
         padding: 10px 15px;
         gap: 0 10px;
@@ -173,6 +177,10 @@ body {
         color: #fff;
         border: none;
         outline: none;
+        transition: all .2s linear;
+        &:hover{
+            background: #EB440F;
+        }
     }
 
     &.light {
@@ -193,6 +201,11 @@ body {
     z-index: 2;
     right: 50px;
 
+    @media ($tablet) {
+        right: 0;
+        bottom: 25px;
+    }
+
     a {
         width: 70px;
         height: 70px;
@@ -212,13 +225,15 @@ body {
         display: none;
     }
 }
-.desctop_flex{
+
+.desctop_flex {
     display: flex;
 
     @media ($tablet) {
         display: none;
     }
 }
+
 .mobile {
     display: none;
 
@@ -226,7 +241,8 @@ body {
         display: block;
     }
 }
-.mobile_color{
+
+.mobile_color {
     color: #223A67 !important;
     margin-top: 15px;
 }

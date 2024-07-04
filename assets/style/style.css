@@ -616,6 +616,19 @@
     gap: 25px 0;
   }
 }
+.our_objects .top_content .button.light {
+  transition: all 0.3s linear;
+}
+.our_objects .top_content .button.light:hover {
+  background: #223A67;
+  color: #fff;
+}
+.our_objects .top_content .button.light:hover .text_18_6 {
+  color: #fff;
+}
+.our_objects .top_content .button.light:hover svg path {
+  stroke: white;
+}
 @media (max-width:768px) {
   .our_objects .top_content .button.light {
     padding: 15px 40px;
@@ -1416,6 +1429,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   color: #243452;
   font-family: "Manrope";
@@ -1558,6 +1575,10 @@ body {
   color: #fff;
   border: none;
   outline: none;
+  transition: all 0.2s linear;
+}
+.button.orange:hover {
+  background: #EB440F;
 }
 .button.light {
   background: #E1E8F2;
@@ -1573,6 +1594,12 @@ body {
   bottom: 100px;
   z-index: 2;
   right: 50px;
+}
+@media (max-width:768px) {
+  .to_top {
+    right: 0;
+    bottom: 25px;
+  }
 }
 .to_top a {
   width: 70px;

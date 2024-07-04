@@ -13,9 +13,19 @@
             gap: 25px 0;
         }
 
-        .button.light {
+        .button.light{
+            &:hover{
+                background: #223A67;
+                color: #fff;
+                .text_18_6{
+                    color: #fff;
+                }
+                svg path{
+                    stroke: #ffff;
+                }                
+            }
+            transition: all .3s linear;
             @media ($tablet) {
-                // width: 100%;
                 padding: 15px 40px;
             }
 
@@ -24,6 +34,7 @@
                     line-height: normal;
                     font-size: 15px;
                 }
+                
             }
         }
     }
