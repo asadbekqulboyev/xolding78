@@ -26,25 +26,9 @@ $(document).ready(function () {
       }
     })
     // open menu
-    // if ($('.menu_overlay').hasClass('active')) {
-    //   $(this).children('.mobile').hide()
-    //   $(this).children('.mobile2').show()
-    // } else {
-    //   $(this).children('.mobile').show()
-    //   $(this).children('.mobile2').hide()
-    // }'
     $('.burger_icon').click(function () {
       $(this).toggleClass('active')
       $('.menu_overlay').toggleClass('active')
-      // if ($('.menu_overlay').hasClass('active')) {
-      //   console.log('hello');
-      //   $(this).children('.mobile:first').hide()
-      //   $(this).children('.mobile2').show()
-      // } else {
-      //   $(this).children('.mobile:first').hide()
-      //   $(this).children('.mobile2').show()
-      //   console.log('ex');
-      // }
     })
     // close menu
     $('.exit_menu').click(function () {
@@ -53,7 +37,6 @@ $(document).ready(function () {
     $('.menu_overlay').click(function (ev) {
       if ($(ev.target).is('.menu_overlay') || $(ev.target).is('.modal_exit')) {
         $('.menu_overlay').removeClass('active')
-
       }
     })
     // slidetoggle links
@@ -150,24 +133,45 @@ if ($(window).width() <= 1200) {
   $('.object').addClass('swiper-slide')
 }
 // })
+
 let slide = new Swiper('.slide_object', {
   pagination: {
     el: '.pagination_loc',
     clickable: true,
   }
 })
+// footer toggle
 $('.item_title').click(function () {
   $(this).parent('.footer_item').children('.slide_to').slideToggle()
 })
-$('.all_content').click(function () { })
-// function addSwipper(mainClass, wrapperClass, slideClass, options){
-
-// }
 $('.all_content').click(function () {
   $(this).hide()
   $('.features_item.hidden').toggleClass('show')
 })
-// $(document).ready(function () {
+
+// modal
+$('.types .type').click(function(e){
+  e.preventDefault()
+  console.log($(this).children('.type_title').text());
+  $('#filter2').fadeIn().css({display:'flex'})
+})
+$('.modal#filter2').click(function(ev){
+  ev.preventDefault()
+  if ($(ev.target).is('.modal#filter2')) {
+  $(this).fadeOut()
+}
+
+})
+$('#filter2 .exit_modal').click(function(){
+ $('#filter2 ').css({display:'none'})
+})
 
 
 
+// exit modal 
+// function hideModal(){
+//   $(this).parents('.modal')
+// }
+// $('.exit_modal').click(
+//   hideModal()
+// )

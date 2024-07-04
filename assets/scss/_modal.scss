@@ -1,0 +1,70 @@
+.modal {
+    width: 100%;
+    height: 100vh;
+    background: #FAFAFA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1123231111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .modal_header{
+        gap: 20px 0;
+        .exit_modal{
+        }
+    }
+    .modal_title_filter_sm{
+        font-size: 22px;
+    }
+    .modal_title_filter_md{
+        font-size: 24px;
+    }
+    .modal_body {
+        margin-top: 50px;
+    }
+
+    .button_lists {
+        gap: 15px 10px;
+
+        .button_change {
+            display: flex;
+            position: relative;
+
+            input {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            span {
+                flex: 0 0 auto;
+                background: none;
+                border: 1px solid #E1E8F2;
+                padding: 15px 15px;
+                cursor: pointer;
+
+                @media ($tablet) {
+                    padding: 10px;
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    background: #223A67;
+                    color: #ffff;
+                }
+            }
+
+            input:checked~span {
+                background: #223A67;
+                color: #ffff;
+            }
+        }
+    }
+
+    .modal_container {
+        max-width: 811px;
+        margin: 0 0 auto;
+    }
+}
