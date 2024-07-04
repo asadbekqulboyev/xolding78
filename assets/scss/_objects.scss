@@ -52,7 +52,17 @@
         padding: 25px;
         width: calc(50% - 12.5px);
         background: #fff;
+        transition: all .2s linear;
+        .button{
+            border:1px solid transparent;
+        }
+        &:hover{
 
+            background:#E1E8F2;
+            .button{
+                border-color: #223A67;
+            }
+        }
         @media (max-width:1490px) {
             padding: 20px;
         }

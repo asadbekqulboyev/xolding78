@@ -255,6 +255,9 @@
         padding: 29px 75px;
         overflow-y: auto;
         height: 100%;
+        &::-webkit-scrollbar{
+            display: none;
+        }
         @media ($tablet) {
         height: calc(100% - 60px);
         padding-top: 10px;

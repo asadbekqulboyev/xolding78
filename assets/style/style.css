@@ -221,6 +221,9 @@
   overflow-y: auto;
   height: 100%;
 }
+.header .nav_menu::-webkit-scrollbar {
+  display: none;
+}
 @media (max-width:768px) {
   .header .nav_menu {
     height: calc(100% - 60px);
@@ -655,6 +658,16 @@
   padding: 25px;
   width: calc(50% - 12.5px);
   background: #fff;
+  transition: all 0.2s linear;
+}
+.objects .object .button {
+  border: 1px solid transparent;
+}
+.objects .object:hover {
+  background: #E1E8F2;
+}
+.objects .object:hover .button {
+  border-color: #223A67;
 }
 @media (max-width: 1490px) {
   .objects .object {
