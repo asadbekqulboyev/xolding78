@@ -1308,8 +1308,8 @@
 }
 .modal#carta .carta {
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
+  height: calc(100% - 70px);
+  overflow-y: hidden;
 }
 .modal#carta .carta img {
   width: 100%;
@@ -1379,6 +1379,10 @@
 .button_change input[type=radio]:checked ~ span {
   background: #223A67;
   color: white;
+}
+
+.exit_carta {
+  cursor: pointer;
 }
 
 .footer {

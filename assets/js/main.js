@@ -169,3 +169,6 @@ $('.top_content .button').click(function(e){
   e.preventDefault();
   $('.modal#carta').fadeIn();
 })
+$('.exit_carta').click(function(){
+  $('.modal#carta').fadeOut();
+})

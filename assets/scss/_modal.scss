@@ -10,42 +10,50 @@
     justify-content: center;
     align-items: center;
     display: none;
-    .exit_modal{
-    cursor: pointer;
-    gap: 10px ;
+
+    .exit_modal {
+        cursor: pointer;
+        gap: 10px;
     }
-    &#carta{
+
+    &#carta {
         padding: 25px;
-        .modal_carta{
-            padding:5px 0 15px ;
+
+        .modal_carta {
+            padding: 5px 0 15px;
         }
-        .carta{
+
+        .carta {
             width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            img{
+            height: calc(100% - 70px) ;
+            overflow-y: hidden;
+
+            img {
                 width: 100%;
                 object-fit: cover;
             }
         }
     }
-          a{
-            color: #223A67;
-        }
+
+    a {
+        color: #223A67;
+    }
+
     .thanks_content {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        gap: 25px 0; 
-        .section_title{
-        @media ($tablet) {
-            font-size: 24px;
+        gap: 25px 0;
+
+        .section_title {
+            @media ($tablet) {
+                font-size: 24px;
+            }
+
         }
-        
     }
-    }
-   
+
     .modal_header {
         gap: 20px 0;
     }
@@ -65,7 +73,7 @@
     .button_lists {
         gap: 15px 10px;
 
-        
+
     }
 
     .modal_container {
@@ -73,6 +81,7 @@
         margin: 0 0 auto;
     }
 }
+
 .button_change {
     display: flex;
     position: relative;
@@ -102,8 +111,11 @@
     }
 
 
-    input[type=radio]:checked ~ span{
-         background: #223A67;
+    input[type=radio]:checked~span {
+        background: #223A67;
         color: #ffff;
     }
+}
+.exit_carta{
+    cursor: pointer;
 }
