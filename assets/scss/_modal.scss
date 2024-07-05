@@ -10,6 +10,25 @@
     justify-content: center;
     align-items: center;
     display: none;
+    .exit_modal{
+    cursor: pointer;
+    gap: 10px ;
+    }
+    &#carta{
+        padding: 25px;
+        .modal_carta{
+            padding:5px 0 15px ;
+        }
+        .carta{
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
           a{
             color: #223A67;
         }
@@ -46,43 +65,45 @@
     .button_lists {
         gap: 15px 10px;
 
-        .button_change {
-            display: flex;
-            position: relative;
-
-            input {
-                position: absolute;
-                opacity: 0;
-                visibility: hidden;
-            }
-
-            span {
-                flex: 0 0 auto;
-                background: none;
-                border: 1px solid #E1E8F2;
-                padding: 15px 15px;
-                cursor: pointer;
-
-                @media ($tablet) {
-                    padding: 10px;
-                    font-size: 15px;
-                }
-
-                &:hover {
-                    background: #223A67;
-                    color: #ffff;
-                }
-            }
-
-            input:checked~span {
-                background: #223A67;
-                color: #ffff;
-            }
-        }
+        
     }
 
     .modal_container {
         max-width: 811px;
         margin: 0 0 auto;
+    }
+}
+.button_change {
+    display: flex;
+    position: relative;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    span {
+        flex: 0 0 auto;
+        background: none;
+        border: 1px solid #E1E8F2;
+        padding: 15px 15px;
+        cursor: pointer;
+
+        @media ($tablet) {
+            padding: 10px;
+            font-size: 15px;
+        }
+
+        &:hover {
+            background: #223A67;
+            color: #ffff;
+        }
+    }
+
+
+    input[type=radio]:checked ~ span{
+         background: #223A67;
+        color: #ffff;
     }
 }

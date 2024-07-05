@@ -201,7 +201,9 @@ body {
     bottom: 100px;
     z-index: 2;
     right: 50px;
-
+    .container{
+        padding-right: 0;
+    }
     @media ($tablet) {
         right: 0;
         bottom: 25px;

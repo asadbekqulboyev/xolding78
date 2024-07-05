@@ -1,11 +1,3 @@
-// hero slide
-// var swiper = new Swiper(".mySwiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });;
-
 $(document).ready(function () {
   // header
   function Header() {
@@ -13,17 +5,19 @@ $(document).ready(function () {
     $(window).scroll(function () {
       if (scrollY > 10) {
         $('.header.index').addClass('light');
-        $('.header .logo img').attr('src', './assets/image/logo2.svg')
-        $('.burger_icon').addClass('light')
-        $('.icons_select ').addClass('light')
-        $('.header_right .mobile').addClass('light')
+        $('.header.index .logo img').attr('src', './assets/image/logo2.svg')
+        $('.header.index .burger_icon').addClass('light')
+        $('.header.index .icons_select ').addClass('light')
+        $('.header.index .header_right .mobile').addClass('light')
       } else {
         $('.icons_select ').removeClass('light')
         $('.header.index').removeClass('light')
-        $('.header .logo img').attr('src', './assets/image/logo.svg')
-        $('.burger_icon').removeClass('light')
-        $('.header_right .mobile').removeClass('light')
+        $('.header.index .logo img').attr('src', './assets/image/logo.svg')
+        $('.header.index .burger_icon').removeClass('light')
+        $('.header.index .icons_select ').removeClass('light')
+        $('.header.index .header_right .mobile').removeClass('light')
       }
+      
     })
     // open menu
     $('.burger_icon').click(function () {
@@ -103,43 +97,45 @@ $(document).ready(function () {
   function Placeholder() {
     var $inputField = $('.form_item input');
     var $placeholder = $('.placeholder');
+    
     $inputField.focus(function () {
-      $(this).parent().find($placeholder).fadeOut(150);
+        $(this).parent().find($placeholder).fadeOut(150);
     });
+
     $inputField.blur(function () {
-      if ($(this).val() === '') {
-        $(this).parent().find($placeholder).fadeIn(150);
-      }
+        if ($(this).val() === '') {
+            $(this).parent().find($placeholder).fadeIn(150);
+        }
     });
-    if ($(this).val() !== '') {
-      $(this).parent().find($placeholder).fadeIn(150);
+
+    $inputField.each(function () {
+        if ($(this).val() !== '') {
+            $(this).parent().find($placeholder).fadeOut(0);
+        } else {
+            $(this).parent().find($placeholder).fadeIn(0);
+        }
+    });
+}
+Placeholder();
+
+
+  // slide  add
+    if ($(window).width() <= 1200) {
+      $('.slide_object').addClass(' swiper')
+      $('.objects').addClass('swiper-wrapper')
+      $('.objects').removeClass('flex')
+      $('.object').addClass('swiper-slide')
+      let slide = new Swiper('.slide_object', {
+      pagination: {
+        el: '.pagination_loc',
+        clickable: true,
+      }
+    })
     }
-  }
-  Placeholder()
-  // slide
 
-
-
+    // 
 });
 
-// $(window).resize(function(){
-// addSwipper('','','',{
-//   slide
-// });
-if ($(window).width() <= 1200) {
-  $('.slide_object').addClass(' swiper')
-  $('.objects').addClass('swiper-wrapper')
-  $('.objects').removeClass('flex')
-  $('.object').addClass('swiper-slide')
-}
-// })
-
-let slide = new Swiper('.slide_object', {
-  pagination: {
-    el: '.pagination_loc',
-    clickable: true,
-  }
-})
 // footer toggle
 $('.item_title').click(function () {
   console.log($(this).children('img').toggleClass('active'));
@@ -149,21 +145,19 @@ $('.all_content').click(function () {
   $(this).hide()
   $('.features_item.hidden').toggleClass('show')
 })
-
 // modal
 $('.types .type').click(function(e){
   e.preventDefault()
-  console.log($(this).children('.type_title').text());
+  // console.log($(this).children('.type_title').text());
   $('#filter2').fadeIn().css({display:'flex'})
 })
 $('.modal#filter2').click(function(ev){
-  ev.preventDefault()
   if ($(ev.target).is('.modal#filter2')) {
   $(this).fadeOut()
 }
 
 })
-// filter 2 exi
+// filter 2 exit
 $('#filter2 .exit_modal').click(function(){
  $('#filter2 ').css({display:'none'})
 })
@@ -171,3 +165,7 @@ $('.forms').submit(function(e){
   e.preventDefault()
   $('#thank').fadeIn()
 });
+$('.top_content .button').click(function(e){
+  e.preventDefault();
+  $('.modal#carta').fadeIn();
+})

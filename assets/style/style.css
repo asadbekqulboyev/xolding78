@@ -183,6 +183,9 @@
 .header .header_right .icons_select.light svg path {
   stroke: #223A67;
 }
+.header .header_right .icons_select.light_select svg path {
+  stroke: #223A67;
+}
 .header .header_right .mobile {
   line-height: 0;
 }
@@ -1293,6 +1296,25 @@
   align-items: center;
   display: none;
 }
+.modal .exit_modal {
+  cursor: pointer;
+  gap: 10px;
+}
+.modal#carta {
+  padding: 25px;
+}
+.modal#carta .modal_carta {
+  padding: 5px 0 15px;
+}
+.modal#carta .carta {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.modal#carta .carta img {
+  width: 100%;
+  object-fit: cover;
+}
 .modal a {
   color: #223A67;
 }
@@ -1323,16 +1345,21 @@
 .modal .button_lists {
   gap: 15px 10px;
 }
-.modal .button_lists .button_change {
+.modal .modal_container {
+  max-width: 811px;
+  margin: 0 0 auto;
+}
+
+.button_change {
   display: flex;
   position: relative;
 }
-.modal .button_lists .button_change input {
+.button_change input {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
-.modal .button_lists .button_change span {
+.button_change span {
   flex: 0 0 auto;
   background: none;
   border: 1px solid #E1E8F2;
@@ -1340,22 +1367,18 @@
   cursor: pointer;
 }
 @media (max-width:768px) {
-  .modal .button_lists .button_change span {
+  .button_change span {
     padding: 10px;
     font-size: 15px;
   }
 }
-.modal .button_lists .button_change span:hover {
+.button_change span:hover {
   background: #223A67;
   color: white;
 }
-.modal .button_lists .button_change input:checked ~ span {
+.button_change input[type=radio]:checked ~ span {
   background: #223A67;
   color: white;
-}
-.modal .modal_container {
-  max-width: 811px;
-  margin: 0 0 auto;
 }
 
 .footer {
@@ -1692,6 +1715,9 @@ body {
   bottom: 100px;
   z-index: 2;
   right: 50px;
+}
+.to_top .container {
+  padding-right: 0;
 }
 @media (max-width:768px) {
   .to_top {

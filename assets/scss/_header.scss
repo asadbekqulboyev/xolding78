@@ -37,6 +37,9 @@
             }
         }
     }
+    &.category{
+        
+    }
 
     .header_left {
         gap: 0 50px;
@@ -174,7 +177,6 @@
 
         .form_lang {
             gap: 0 5px;
-
             @media (max-width:1200px) {
                 display: none;
             }
@@ -206,6 +208,11 @@
             }
 
             &.light {
+                svg path {
+                    stroke: #223A67;
+                }
+            }
+            &.light_select{
                 svg path {
                     stroke: #223A67;
                 }
