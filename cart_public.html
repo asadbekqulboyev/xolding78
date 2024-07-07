@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда производственных помещений</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+    <div class="wrpapper category_wrappre">
+        <header class="header light  ">
+            <div class="container flex between a_center">
+                <div class="header_left flex a_center">
+                    <div class="menu_overlay">
+                        <nav class="nav_menu">
+                            <div class="exit_menu">
+                                <img src="./assets/image/exit.svg" alt="">
+                            </div>
+                            <div class="menu_content flex column between">
+
+                                <ul class="menu_lists flex column">
+                                    <div class="mobile">
+                                        <div class="select_lang flex column ">
+                                            <form action="" class="flex  a_center">
+                                                <label>
+                                                    <input type="radio" value="RUS" name="lang" checked>
+                                                    <span>RUS</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" value="ENG" name="lang">
+                                                    <span>ENG</span>
+                                                </label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <li><a href="" class="text_18_6">Свободные помещения</a></li>
+                                    <li>
+                                        <div class="flex a_center between"><a href="" class="text_18_6">Объекты</a>
+                                        </div>
+
+                                    </li>
+                                    <li class="mobile">
+                                        <div class="flex a_center between "><a href="" class="text_18_6">Документы</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex a_center between dropdown">
+                                            <div class="text_18_6 ">Компания</div>
+                                            <div class="drop_icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path d="M18 9L12 15L6 9" stroke="#223A67" stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="child_link_content">
+                                            <ul class="menu_child flex column ">
+                                                <li><a href="" class="text_bluedark">О нас</a></li>
+                                                <li><a href="" class="text_bluedark">Публикации</a></li>
+                                                <li><a href="" class="text_bluedark">Вакансии</a></li>
+                                                <li><a href="" class="text_bluedark">Документы</a></li>
+                                                <li><a href="" class="text_bluedark">Контакты</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                                <div class="mobile">
+                                    <a href="tel:+88124456835" class=" text_24_6 mobile_color">8 (812) 445-68-35</a>
+                                </div>
+
+                                <div class="desctop">
+                                    <div class="select_lang flex column ">
+                                        <a href="tel:+88124456835" class="text_bluedark text_24_6">8 (812) 445-68-35</a>
+                                        <form action="" class="flex  a_center">
+                                            <label>
+                                                <input type="radio" value="RUS" name="lang" checked>
+                                                <span>RUS</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" value="ENG" name="lang">
+                                                <span>ENG</span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- icon -->
+                    <div class="burger_icon light">
+                        <svg class="desctop" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M28 16C28 16.2652 27.8946 16.5196 27.7071 16.7071C27.5196 16.8946 27.2652 17 27 17H5C4.73478 17 4.48043 16.8946 4.29289 16.7071C4.10536 16.5196 4 16.2652 4 16C4 15.7348 4.10536 15.4804 4.29289 15.2929C4.48043 15.1054 4.73478 15 5 15H27C27.2652 15 27.5196 15.1054 27.7071 15.2929C27.8946 15.4804 28 15.7348 28 16ZM5 9H27C27.2652 9 27.5196 8.89464 27.7071 8.70711C27.8946 8.51957 28 8.26522 28 8C28 7.73478 27.8946 7.48043 27.7071 7.29289C27.5196 7.10536 27.2652 7 27 7H5C4.73478 7 4.48043 7.10536 4.29289 7.29289C4.10536 7.48043 4 7.73478 4 8C4 8.26522 4.10536 8.51957 4.29289 8.70711C4.48043 8.89464 4.73478 9 5 9ZM27 23H5C4.73478 23 4.48043 23.1054 4.29289 23.2929C4.10536 23.4804 4 23.7348 4 24C4 24.2652 4.10536 24.5196 4.29289 24.7071C4.48043 24.8946 4.73478 25 5 25H27C27.2652 25 27.5196 24.8946 27.7071 24.7071C27.8946 24.5196 28 24.2652 28 24C28 23.7348 27.8946 23.4804 27.7071 23.2929C27.5196 23.1054 27.2652 23 27 23Z"
+                                fill="white" />
+                        </svg>
+                        <svg class=" mobile1 mobile" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 36 36" fill="none">
+                            <path d="M31.125 18H4.875M31.125 9.25H4.875M22.375 26.75H4.875" stroke="white"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class=" mobile2 mobile" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                            viewBox="0 0 36 36" fill="none">
+                            <path d="M9.25 9.25L26.75 26.75M26.75 9.25L9.25 26.75" stroke="#223A67" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <a href="" class="desctop">Свободные помещения</a>
+                    <a href="" class="desctop">Объекты</a>
+                </div>
+                <div class="logo">
+                    <a href="">
+                        <img src="./assets/image/logo2.svg" alt="">
+                    </a>
+                </div>
+                <div class="header_right flex a_center">
+                    <a href="tel:+88124456835"><span class="desctop">8 (812) 445-68-35</span>
+                        <div class="mobile light">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M28.3182 12.6855C28.3553 12.5467 28.4194 12.4165 28.5069 12.3025C28.5943 12.1885 28.7033 12.0928 28.8278 12.0209C28.9522 11.9491 29.0896 11.9024 29.232 11.8837C29.3745 11.8649 29.5192 11.8744 29.658 11.9116C31.6856 12.4407 33.5356 13.5006 35.0173 14.9824C36.4991 16.4641 37.5591 18.3141 38.0881 20.3417C38.1253 20.4805 38.1348 20.6253 38.1161 20.7677C38.0973 20.9102 38.0507 21.0475 37.9788 21.172C37.9069 21.2964 37.8113 21.4054 37.6972 21.4929C37.5832 21.5803 37.4531 21.6444 37.3143 21.6816C37.2219 21.7058 37.1268 21.7182 37.0313 21.7185C36.7902 21.7185 36.556 21.6388 36.3649 21.492C36.1737 21.3451 36.0365 21.1393 35.9744 20.9064C35.543 19.2511 34.6779 17.7409 33.4683 16.5314C32.2588 15.3219 30.7486 14.4568 29.0934 14.0253C28.9544 13.9883 28.8242 13.9243 28.71 13.8369C28.5958 13.7496 28.5 13.6405 28.428 13.5161C28.356 13.3917 28.3092 13.2542 28.2904 13.1117C28.2715 12.9692 28.281 12.8243 28.3182 12.6855ZM27.9996 18.4003C29.885 18.9034 31.0963 20.1148 31.5994 22.0001C31.6615 22.233 31.7987 22.4389 31.9899 22.5857C32.181 22.7326 32.4152 22.8122 32.6563 22.8122C32.7518 22.812 32.8469 22.7996 32.9393 22.7753C33.0781 22.7382 33.2082 22.6741 33.3222 22.5866C33.4363 22.4992 33.5319 22.3901 33.6038 22.2657C33.6757 22.1413 33.7223 22.0039 33.7411 21.8615C33.7598 21.719 33.7503 21.5743 33.7131 21.4355C33.0131 18.8159 31.1838 16.9866 28.5643 16.2866C28.4255 16.2496 28.2808 16.2402 28.1383 16.259C27.9959 16.2779 27.8586 16.3246 27.7343 16.3965C27.6099 16.4685 27.501 16.5642 27.4136 16.6782C27.3262 16.7922 27.2622 16.9224 27.2251 17.0611C27.188 17.1999 27.1787 17.3447 27.1975 17.4871C27.2164 17.6295 27.2631 17.7668 27.335 17.8911C27.4069 18.0155 27.5026 18.1245 27.6167 18.2118C27.7307 18.2992 27.8608 18.3632 27.9996 18.4003ZM39.2024 31.4364C38.9586 33.289 38.0488 34.9895 36.6429 36.2203C35.2369 37.4511 33.4311 38.1281 31.5625 38.1247C20.707 38.1247 11.875 29.2927 11.875 18.4372C11.8717 16.5687 12.5486 14.7628 13.7794 13.3569C15.0102 11.951 16.7107 11.0412 18.5633 10.7974C19.0318 10.7402 19.5062 10.836 19.9157 11.0706C20.3252 11.3052 20.6479 11.6659 20.8356 12.0989L23.7231 18.5452V18.5616C23.8667 18.8931 23.9261 19.255 23.8958 19.615C23.8655 19.975 23.7465 20.3219 23.5494 20.6247C23.5248 20.6616 23.4988 20.6958 23.4715 20.73L20.625 24.1042C21.649 26.1851 23.8256 28.3425 25.9338 29.3693L29.2615 26.5378C29.2942 26.5103 29.3285 26.4848 29.3641 26.4612C29.6666 26.2595 30.0147 26.1363 30.3768 26.1029C30.739 26.0694 31.1037 26.1268 31.4381 26.2698L31.4559 26.278L37.8967 29.1642C38.3305 29.3512 38.6921 29.6736 38.9275 30.0831C39.1628 30.4927 39.2592 30.9675 39.2024 31.4364ZM37.0313 31.163C37.0313 31.163 37.0217 31.163 37.0162 31.163L30.5904 28.2851L27.2613 31.1165C27.229 31.1439 27.1953 31.1694 27.1602 31.1931C26.8454 31.4031 26.4815 31.5279 26.1041 31.5552C25.7267 31.5825 25.3486 31.5114 25.0068 31.3489C22.4461 30.1116 19.8936 27.5782 18.6549 25.0448C18.4909 24.7056 18.4173 24.3297 18.4412 23.9536C18.4652 23.5776 18.5859 23.2141 18.7916 22.8984C18.8148 22.8613 18.8409 22.8261 18.8695 22.7931L21.7188 19.4148L18.8477 12.989C18.8471 12.9835 18.8471 12.978 18.8477 12.9726C17.5218 13.1455 16.3045 13.7958 15.4237 14.8018C14.5429 15.8077 14.0589 17.1002 14.0625 18.4372C14.0676 23.077 15.913 27.5252 19.1937 30.806C22.4745 34.0868 26.9228 35.9322 31.5625 35.9372C32.8987 35.9418 34.1909 35.4596 35.1974 34.5806C36.2039 33.7017 36.8558 32.4863 37.0313 31.1616V31.163Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </a>
+                    <form action="">
+                        <label class="flex a_center form_lang">
+                            <select name="language" class="text_18_6">
+                                <option value="RUS">RUS</option>
+                                <option value="ENG">ENG</option>
+                            </select>
+                            <span class="icons_select light_select">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path d="M18 9.5L12 15.5L6 9.5" stroke="red" stroke-width="2" />
+                                </svg>
+                            </span>
+                        </label>
+
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <!-- main_top -->
+            <section class="main_top">
+                <div class="container_sm flex center column">
+                    <ul class="beradcrumbs flex center a_center">
+                        <li><a href="" class="active">Главная</a></li> <span>/</span>
+                        <li><a href="" class="active">Публикации</a></li><span>/</span>
+                        <li><a href="">Заголовок новости очень длинный в две строки</a></li>
+                    </ul>
+                    <div class="section_title t_md text_center">Заголовок новости очень длинный в две строки</div>
+                </div>
+            </section>
+            <!-- text  -->
+            <section class="text">
+                <div class="container_small">
+                    <h2 class="section_title text_center">Заголовок H2</h2>
+                    <div class="text_content pt_50">
+                        <p>
+                          Нынешняя специализация компаний «Холдинга-78» - это <a href=""> девелопмент земель</a>, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.  
+                        </p>
+                        <p class="pt_25">
+                            За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                        </p>
+                    </div>
+                    <div class="text_content">
+                        <p class="text_18_6 pt_25"> <b>Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.</b> </p>
+                    </div>
+                    <div class="text_content ">
+                        <p class="pt_25">За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- image -->
+            <section class="image">
+                <div class="container_sm">
+                    <a href="" class="image_conent">
+                        <img src="" alt="">
+                        <div class="image">
+                            <img src="./assets/image/image.png" alt="">
+                        </div>
+                        <div class="image_title text_center">
+                            Подпись к изображению
+                        </div>
+                    </a>
+                </div>
+            </section>
+             <!-- text  -->
+             <section class="text">
+                <div class="container_small">
+                    <h2 class="section_title text_center">Заголовок H2</h2>
+                    <div class="text_content pt_50">
+                        <h3>Заголовок H3</h3>
+                        <p class="pt_20">
+                            Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                        </p>
+                        <p class="pt_25">
+                            За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                        </p>
+                    </div>
+                    <div class="text_content pt_50">
+                        <h3>Заголовок H3</h3>
+                        <p class="pt_20">
+                            Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                        </p>
+                        <p class="pt_25">
+                            За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- image -->
+            <section class="video">
+                <div class="container_sm">
+                    <a href="" class="image_conent">
+                        <div class="play_icon flex center a_center">
+                            <img src="./assets/image/play_icon.svg" alt="">
+                        </div>
+                        <div class="image">
+                            <img src="./assets/image/image.png" alt="">
+                        </div>
+                        <div class="image_title text_center">
+                            Подпись к видео
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- text -->
+            <section class="text ">
+                <div class="container_small">
+                    <div class="text_content ">
+                        <h4>Заголовок H4</h4>
+                        <ul class="pt_20">
+                            <li>
+                                Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                            </li>
+                            <li>
+                                За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                            </li>
+                            <li class="pt_10">
+                                Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                            </li>
+                            <li class="pt_5">
+                                За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text_content pt_40">
+                        <h4>Заголовок H4</h4>
+                        <ol class="pt_20">
+                            <li>
+                                Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                            </li>
+                            <li class="pt_5">
+                                За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                            </li>
+                            <li  class="pt_5">
+                                Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                            </li>
+                            <li class="pt_5">
+                                За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                            </li>
+                            <li  class="pt_5">
+                                Нынешняя специализация компаний «Холдинга-78» - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление.
+                            </li>
+                            <li>
+                                За бесперебойную деятельность объектов отвечают круглосуточные технические, эксплуатационные службы. Технические подразделения фирмы следят за инженерными системами всех объектов Холдинга, занимаются вопросами текущих и капитальных ремонтов.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <!-- card section -->
+            <section class="card_section pt_50">
+                <div class="container_sm">
+                    <div class="card_component flex between">
+                        <div class="card_left flex column between">
+                            <div class="content_top">
+                                <div class="content_icon">
+                                    <img src="./assets/image/card_icon.svg" alt="">
+                                </div>
+                                <p>
+                                    <b class="text_18_6">«Нынешняя специализация компаний„Холдинга-78“ - это девелопмент земель, возведение складов и зданий промышленного назначения, сдача в аренду и профессиональная эксплуатация индустриальной недвижимости. Значительное место в нашем бизнесе занимает аграрное направление».</b>
+                                </p>
+                            </div>
+                            <div class="card_info flex">
+                                <div class="card_img mobile">
+                                    <img src="./assets/image/card_img.svg" alt="">
+                                </div>
+                               <div class="content_title flex column ">
+                                <h4>Наталья</h4>
+                                <div class="text_gray">Директор по персоналу</div>
+                            </div> 
+                            </div>
+                            
+                        </div>
+                        <div class="card_image desctop">
+                            <img src="./assets/image/card_img.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- titles  section-->
+             <section class="titles pt_50">
+                <div class="container_small">
+                    <h3>Заголовок H3</h3>
+                    <ul class="title_all flex column pt_25">
+                        <li>
+                            <p class="text_gray">Параметр</p>
+                            <b>Свойство</b>
+                        </li>
+                        <li>
+                            <p class="text_gray">Параметр</p>
+                            <b>Свойство</b>
+                        </li>
+                        <li>
+                            <p class="text_gray">Параметр</p>
+                            <b>Свойство</b>
+                        </li>
+                    </ul>
+                </div>
+             </section>
+             <!-- title -->
+              <section class="table pt_30">
+                <div class="container_md">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Объект</th>
+                                <th>Ставка</th>
+                                <th>НДС</th>
+                                <th>Населённый пункт</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Индустриальный парк Стройполимер</td>
+                                <td>от 42 569 ₽</td>
+                                <td>Да</td>
+                                <td>Санкт-Петербург</td>
+                            </tr>
+                            <tr>
+                                <td>Индустриальный парк Стройполимер</td>
+                                <td>от 42 569 ₽</td>
+                                <td>Нет</td>
+                                <td>Ленобласть</td>
+                            </tr>
+                            <tr>
+                                <td>Индустриальный парк Стройполимер</td>
+                                <td>от 42 569 ₽</td>
+                                <td>Да</td>
+                                <td>Санкт-Петербург</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+<div class="text_link text_center">
+                    <a href="">Сводка по объектам</a>
+                    <a href="" class="button orange flex center a_center x_auto">
+                        <div class="btn_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M5 12.5L4.29289 13.2071L3.58579 12.5L4.29289 11.7929L5 12.5ZM26 22.5C26 23.0523 25.5523 23.5 25 23.5C24.4477 23.5 24 23.0523 24 22.5L26 22.5ZM10.5429 19.4571L4.29289 13.2071L5.70711 11.7929L11.9571 18.0429L10.5429 19.4571ZM4.29289 11.7929L10.5429 5.54289L11.9571 6.95711L5.70711 13.2071L4.29289 11.7929ZM5 11.5L19 11.5L19 13.5L5 13.5L5 11.5ZM26 18.5L26 22.5L24 22.5L24 18.5L26 18.5ZM19 11.5C22.866 11.5 26 14.634 26 18.5L24 18.5C24 15.7386 21.7614 13.5 19 13.5L19 11.5Z" fill="white"/>
+                                </svg>
+                        </div>
+                        <span class="text_18_6">Вернуться к новостям</span>
+                    </a>
+                </div>
+                
+              </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_content flex between">
+                    <div class="footer_item">
+                        <div class="text_24_6 item_title flex "><span>Типы помещений</span> <img
+                                src="./assets/image/f_drop.svg" alt="" class="mobile"></div>
+                        <div class="slide_to">
+                            <ul class="item_links flex column">
+                                <li><a href="">Производство</a></li>
+                                <li><a href="">Склады</a></li>
+                                <li><a href="">Офисы</a></li>
+                                <li><a href="">Открытые площадки</a></li>
+                                <li><a href="">Пищевые производства</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer_item">
+                        <div class="text_24_6 item_title flex a_center "><span>Объекты</span> <img
+                                src="./assets/image/f_drop.svg" alt="" class="mobile">
+                        </div>
+                        <div class="slide_to">
+                            <ul class="item_links  flex column">
+                                <li><a href="">Индустриальный Парк «Стройполимер - Холдинг 78»</a></li>
+                                <li><a href="">Индустриальный Парк «Тельмана - Холдинг 78»</a></li>
+                                <li><a href="">Индустриальный Парк «Севастьянова 23 - Холдинг 78»</a></li>
+                                <li><a href="">Индустриальный Парк «Предпортовый - Холдинг 78»</a></li>
+                                <li><a href="">Складской комплекс «Парнас - Холдинг 78»</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer_item">
+                        <ul class="item_links flex column">
+                            <li><a href="">Мы сегодня</a></li>
+                            <li><a href="">Публикации</a></li>
+                            <li><a href="">Вакансии</a></li>
+                            <li><a href="">Документы</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_item">
+                        <ul class="item_links end_links flex column ">
+                            <a href="tel:+79000000000" class="footer_phone">+7 (900) 000-00-00</a>
+                            <a href="mailto:rent@holding78.com">rent@holding78.com</a>
+                            <a href="tel:+79000000000">
+                                <img src="./assets/image/logo.svg" alt="">
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom ">
+                <div class="container flex between a_center">
+                    <div class="bottom_item">© 2024 «Холдинг 78»</div>
+                    <div class="bottom_item"> <a href="">Политика конфиденциальности</a></div>
+                    <div class="bottom_item flex a_center"><span>Разработано</span><a href="" class="icon_bottom">
+                            <img src="./assets/image/разработано профиткит 1.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/select.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

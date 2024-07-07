@@ -8,8 +8,10 @@
 @import 'features';
 @import 'comment';
 @import 'modal';
-@import 'category';
 @import 'footer';
+@import 'category';
+@import 'main';
+
 
 * {
     margin: 0;
@@ -54,7 +56,42 @@ body {
         max-width: 360px;
     }
 }
+.container_small{
+    width: 100%;
+    max-width: 800px;
+    margin: 0  auto;
+    @media (max-width:1400px) {
+        max-width: 1200px;
+    }
 
+    @media (max-width:1200px) {
+        max-width: 768px;
+    }
+
+    @media (max-width:768px) {
+        max-width: 360px;
+        padding-left:0 ;
+        padding-right:0 ;
+    }
+}
+.container_md{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    @media (max-width:1400px) {
+        max-width: 1200px;
+    }
+
+    @media (max-width:1200px) {
+        max-width: 768px;
+    }
+
+    @media (max-width:768px) {
+        max-width: 360px;
+        padding-left:0 ;
+        padding-right:0 ;
+    }
+}
 // component
 .flex {
     display: flex;
@@ -116,10 +153,16 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 49.4px;
-
     @media ($tablet) {
         font-size: 24px;
         line-height: 31.2px;
+    }
+    &.t_md{
+        font-size: 48px;
+        @media ($smLaptop) {
+            font-size: 26px;
+            line-height:33.8px;
+            }
     }
 }
 
@@ -249,4 +292,12 @@ body {
 .mobile_color {
     color: #223A67 !important;
     margin-top: 15px;
+}
+.container_sm{
+    width: 100%;
+    margin: 0 auto;
+    max-width:1100px;
+}
+.x_auto{
+    margin: 0 auto;
 }

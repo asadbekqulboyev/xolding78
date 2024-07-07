@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аренда производственных помещений</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 
 <body>
-    <div class="wrpapper">
-        <header class="header light  category">
+    <div class="wrpapper category_wrappre">
+        <header class="header light  ">
             <div class="container flex between a_center">
                 <div class="header_left flex a_center">
                     <div class="menu_overlay">
@@ -148,590 +149,774 @@
             </div>
         </header>
         <section class="breadcrambs">
-            <div class="container">
+            <div class="container flex column">
                 <ul class="links flex">
                     <li>
                         <a href="" class="active">Главная</a>
                     </li>
                     /
                     <li>
-                        <a href="" class="active">Свободные помещения</a>
-
+                        <a href="" class="">Свободные помещения</a>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section class="choose_type  wow animate__animated animate__fadeInUp">
-            <div class="container">
-                <h2 class="section_title text_center">Выберите тип помещения</h2>
-                <div class="types flex between">
-                    <a href="" class=" type flex column">
-                        <div class="type_img">
-                            <img src="./assets/image/type1.png" alt="">
-                        </div>
-                        <div class="type_title text_18_6">Производство</div>
-                    </a>
-                    <a href="" class="type flex column">
-                        <div class="type_img">
-                            <img src="./assets/image/type2.png" alt="">
-                        </div>
-                        <div class="type_title text_18_6">Склад</div>
-                    </a>
-                    <a href="" class="type flex column">
-                        <div class="type_img">
-                            <img src="./assets/image/type3.png" alt="">
-                        </div>
-                        <div class="type_title text_18_6">Офис</div>
-                    </a>
-                    <a href="" class="type flex column">
-                        <div class="type_img">
-                            <img src="./assets/image/type4.png" alt="">
-                        </div>
-                        <div class="type_title text_18_6"> Открытая площадка</div>
-                    </a>
-
-                    <a href="" class="type flex column">
-                        <div class="type_img">
-                            <img src="./assets/image/type5.png" alt="">
-                        </div>
-                        <div class="type_title text_18_6">Пищевое производство</div>
-                    </a>
-                </div>
-            </div>
-
-        </section>
-        <section class="our_objects wow animate__animated animate__fadeInUp">
-            <div class="container">
-                <div class="top_content flex column  center a_center">
-                    <h2 class="section_title text_center">Наши объекты</h2>
-                    <a href="" class="button light flex center ">
-                        <div class="card_btn flex center a_center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30"
-                                fill="none">
-                                <path
-                                    d="M26.75 20.9453V6.91466C26.75 6.59631 26.4285 6.37861 26.1329 6.49685L20.6351 8.69596C20.5473 8.73109 20.4506 8.73765 20.3588 8.71471L10.6412 6.28529C10.5494 6.26235 10.4527 6.26891 10.3649 6.30404L4.53287 8.63685C4.36203 8.70519 4.25 8.87066 4.25 9.05467V23.0853C4.25 23.4037 4.57154 23.6214 4.86713 23.5031L10.3649 21.304C10.4527 21.2689 10.5494 21.2623 10.6412 21.2853L20.3588 23.7147C20.4506 23.7377 20.5473 23.7311 20.6351 23.696L26.4671 21.3631C26.638 21.2948 26.75 21.1293 26.75 20.9453Z"
-                                    stroke="#223A67" stroke-width="1.5" stroke-linejoin="round" />
-                                <path d="M20.5 23.75V8.75" stroke="#223A67" stroke-width="1.5" />
-                                <path d="M10.5 21.25L10.5 6.25" stroke="#223A67" stroke-width="1.5" />
-                            </svg>
-                            <span class="text_18_6">
-                                Смотреть все на карте
-                            </span>
-                        </div>
-
-                    </a>
-                </div>
-                <div class="slide_object">
-                    <div class="objects flex wrap between">
-                        <!-- 1 -->
-                        <div class="object flex between">
-                            <div class="object_left flex column between">
-                                <div class="object_left_title">
-                                    <div class="object_small_title">Индустриальный парк</div>
-                                    <div class="object_title">Стройполимер</div>
-                                </div>
-                                <div class="object_btn">
-                                    <a href="https://yandex.ru/map-constructor/"
-                                        class="button sm_light light flex a_center">
-                                        <div class="button_icon">
-                                            <img src="./assets/image/btn_icon.svg" alt="">
-                                        </div>
-                                        <span>Колпино, Северная улица, 14</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="object_img">
-                                <img src="./assets/image/objec_img.png" alt="">
-                            </div>
-                        </div>
-                        <!-- 2 -->
-                        <div class="object flex between">
-                            <div class="object_left flex column between">
-                                <div class="object_left_title">
-                                    <div class="object_small_title">Индустриальный парк</div>
-                                    <div class="object_title">Тельмана</div>
-                                </div>
-                                <div class="object_btn">
-                                    <a href="https://yandex.ru/map-constructor/"
-                                        class="button sm_light light flex a_center"
-                                        class="button sm_light light flex a_center">
-                                        <div class="button_icon">
-                                            <img src="./assets/image/btn_icon.svg" alt="">
-                                        </div>
-                                        <span>пос. Тельмана, 60</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="object_img">
-                                <img src="./assets/image/objec_img2.png" alt="">
-                            </div>
-                        </div>
-                        <!-- 3 -->
-                        <div class="object flex between">
-                            <div class="object_left flex column between">
-                                <div class="object_left_title">
-                                    <div class="object_small_title">Индустриальный парк</div>
-                                    <div class="object_title">Севастьянова 23</div>
-                                </div>
-                                <div class="object_btn">
-                                    <a href="https://yandex.ru/map-constructor/"
-                                        class="button sm_light light flex a_center"
-                                        class="button sm_light light flex a_center">
-                                        <div class="button_icon">
-                                            <img src="./assets/image/btn_icon.svg" alt="">
-                                        </div>
-                                        <span>Колпино, Севастьянова, 23</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="object_img">
-                                <img src="./assets/image/objec_img3.png" alt="">
-                            </div>
-                        </div>
-                        <!-- 4 -->
-                        <div class="object flex between">
-                            <div class="object_left flex column between">
-                                <div class="object_left_title">
-                                    <div class="object_small_title">Индустриальный парк</div>
-                                    <div class="object_title">Предпортовый</div>
-                                </div>
-                                <div class="object_btn">
-                                    <a href="https://yandex.ru/map-constructor/"
-                                        class="button sm_light light flex a_center"
-                                        class="button sm_light light flex a_center">
-                                        <div class="button_icon">
-                                            <img src="./assets/image/btn_icon.svg" alt="">
-                                        </div>
-                                        <span>СПб, Предпортовый пр., 5л</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="object_img">
-                                <img src="./assets/image/objec_img4.png" alt="">
-                            </div>
-                        </div>
-                        <!-- 5 -->
-                        <div class="object flex between">
-                            <div class="object_left flex column between">
-                                <div class="object_left_title">
-                                    <div class="object_small_title">Логистический комплекс</div>
-                                    <div class="object_title">Парнас</div>
-                                </div>
-                                <div class="object_btn">
-                                    <a href="https://yandex.ru/map-constructor/"
-                                        class="button sm_light light flex a_center"
-                                        class="button sm_light light flex a_center">
-                                        <div class="button_icon">
-                                            <img src="./assets/image/btn_icon.svg" alt="">
-                                        </div>
-                                        <span>СПб, 2-й Верхний переулок, 13а</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="object_img">
-                                <img src="./assets/image/objec_img5.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagination_loc flex center a_center"></div>
-
-            </div>
-        </section>
-        <section class="contact wow animate__animated animate__fadeInUp">
-            <div class="contact_top flex column">
-                <div class="contact_action text_center text_18_6">
-                    <div class="container"> Нужна помощь в подборе помещения?</div>
-                </div>
-                <h2 class="section_title text_center">
-                    <div class="container"> Оставьте заявку и мы свяжемся с Вами</div>
+                <h2 class="section_title t_md">
+                    Свободные помещения
                 </h2>
             </div>
-            <div class="container">
-                <div class="form_content flex center a_center">
-                    <form class="forms flex column">
+        </section>
+
+        <section class="category">
+            <div class="container flex between">
+                <div class="filter">
+                    <div class="mobile">
+                        <div class="show_filter_btn flex a_center between">
+                            <span>Нужна помощь в подборе?</span>
+                            <div class="icon_filter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#7C8BA7" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="filter_form flex column">
                         <!-- item 1 -->
-                        <label class="form_item">
-                            <span class="placeholder">Имя<span>*</span></span>
-                            <input type="text" name="name" required>
-                        </label>
+                        <div class="filter_item flex column">
+                            <div class="filter_item_title text_18_6">Тип помещения</div>
+                            <div class="radio_items flex wrap">
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip" checked>
+                                    <span class="text_18_6">Промышленное производство</span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- btn 2 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip">
+                                    <span class="text_18_6">Склады</span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- btn 3 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip">
+                                    <span class="text_18_6">Офисы</span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- btn 4 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip">
+
+                                    <span class="text_18_6">Открытые площадки</span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- btn 5 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip">
+                                    <span class="text_18_6">Пищевые производства</span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                         <!-- item 2 -->
-                        <label class="form_item">
-                            <span class="placeholder">Телефон<span>*</span></span>
-                            <input type="text" name="name" required>
-                        </label>
-                        <!-- item 3 -->
-                        <label class="form_item">
-                            <span class="placeholder">E-mail (необязательно)</span>
+                        <div class="filter_item flex column">
+                            <div class="filter_item_title text_18_6">Площадь</div>
+                            <div class="radio_items flex wrap">
+                                <!-- 1 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2" checked>
+                                    <span class="text_18_6">1001–2000 м <sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 2 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6"> 1–60 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 3 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">61–100 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 4 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">101–300 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 5 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">301–500 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 6 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">501–1000 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 7 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">2001–4000 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                                <!-- 8 -->
+                                <label class="filter_item_radio flex center ">
+                                    <input type="radio" name="tip2">
+                                    <span class="text_18_6">более 4000 м<sup>2</sup></span>
+                                    <div class="filter_icon">
+                                        <img src="./assets/image/Close_square.svg" alt="">
+                                    </div>
+                                </label>
+                            </div>
 
-                            <input type="email" name="name" required />
-                        </label>
-                        <!-- item 4 -->
-                        <label class="form_item">
-                            <div class="button light">Прикрепить файл (docx, pdf, jpeg)</div>
-                            <input type="file" name="file">
-                        </label>
-                        <button type="submit " class="button orange text_18_6">Отправить</button>
-                        <label class="form_item">
-                            <p class="text_center"> Нажимая кнопку «Отправить», вы соглашаетесь с <a href="">Политикой
-                                    конфиденциальности</a> </p>
-                        </label>
+                        </div>
                     </form>
-                </div>
-            </div>
+                    <div class="card_cotnent">
+                        <!-- item top select -->
+                        <div class="card_cotnent_items flex column">
+                            <div class="card_item item_filter flex between">
+                                <div class="card_count ">
+                                    <span>Найдено помещений</span>
+                                    <span class="text_18_6">125</span>
+                                </div>
+                                <div class="left_cotent flex a_center">
+                                    <span>Сортировка по</span>
+                                    <div class="selects flex a_center">
+                                        <form action="" class="select">
+                                            <div class="select-wrapper">
+                                                <select id="sort-options">
+                                                    <option value="descending_area">убыванию площади</option>
+                                                    <option value="ascending_area">возрастанию площади</option>
+                                                    <option value="descending_price">убыванию цены</option>
+                                                    <option value="ascending_price">возрастанию цены</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="card_item flex between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
 
-        </section>
-        <section class="features wow animate__animated animate__fadeInUp">
-            <div class="container">
-                <h2 class="section_title text_center">Мы не просто предоставляем площадь</h2>
-                <div class="features_lists">
-                    <div class="features_lists_top flex between wrap">
-                        <!-- 1 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature1.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6 ">
-                                Опыт и профессионализм
-                            </div>
-                        </div>
-                        <!-- 2 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature2.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Размещение любого вида деятельности
-                            </div>
-                        </div>
-                        <!-- 3 -->
-                        <div class="features_item flex column">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature3.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Собственные службы эксплуатации
-                            </div>
-                        </div>
-                        <!-- 4 -->
-                        <div class="features_item flex column">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature4.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Ремонт под арендатора
-                            </div>
-                        </div>
-                        <!-- 5 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature5.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Технические возможности по подключениям к сетям
-                            </div>
-                        </div>
-                        <!-- 7 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature6.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Круглосуточная работа
-                            </div>
-                        </div>
-                        <!-- 8 -->
-                        <div class="features_item flex column">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature7.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Охрана и безопасность, системы видеонаблюдения
-                            </div>
-                        </div>
-                        <!-- 9 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature8.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Развитая инфраструктура
-                            </div>
-                        </div>
-                        <!-- 10 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature9.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Разные районы и любые бюджеты
-                            </div>
-                        </div>
-                        <!-- 11 -->
-                        <div class="features_item flex column">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature10.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                IT -поддержка
-                            </div>
-                        </div>
-                        <!-- 12 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature11.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Стабильность и уверенность в завтрашнем дне
-                            </div>
-                        </div>
-                        <!-- 13 -->
-                        <div class="features_item flex column hidden show">
-                            <div class="features_icon">
-                                <img src="./assets/image/feature12.svg" alt="">
-                            </div>
-                            <div class="features_item_title text_18_6">
-                                Еще одно преимущество
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex all_content"><span>Смотреть все преимущества</span> <img
-                            src="./assets/image/icon_all_content.svg" alt=""></div>
-                </div>
-            </div>
-        </section>
-        <section class="comment wow animate__animated animate__fadeInUp">
-            <div class="container">
-                <h2 class="section_title text_center">Нас рекомендуют</h2>
-                <div class="slide_content">
-                    <div class="swiper commentSlide">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
-                                        </div>
-                                    </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo1.svg" alt="">
-                                        </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Производственное помещение №34
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м<sup>2</sup>/мес
+                                                    </div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м<sup>2</sup></div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-02.svg"
+                                                            alt=""> <span>от +2 до +6°</span></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo2.svg" alt="">
-                                        </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
-                                        </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
-                                        </div>
-                                    </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo3.svg" alt="">
-                                        </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
-                                        </div>
-                                        <div class="slide_description">
-                                            «Холдинг 78 - профессионалы в управлении недвижимостью. Механизм работает
-                                            четко и слажено, как часы, а для нашего бизнеса - это один из самых важных
-                                            критериев и показателей мастерства»
-                                        </div>
-                                    </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo4.svg" alt="">
-                                        </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
-                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
+                            <!-- 2 -->
+                            <div class="card_item flex  between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
                                         </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo1.svg" alt="">
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
+                                </div>
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Промышленное производство, пищевое
+                                                производство № 1569,3
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м2/мес</div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м2</div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn flex a_center"><img
+                                                            src="./assets/image/thermometer-02.svg" alt=""> <span>от + 2
+                                                            до +6°</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
+                            <!-- 3 -->
+                            <div class="card_item flex between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img3.png" alt="">
+                                            </div>
                                         </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo2.svg" alt="">
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
+                                </div>
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Производственное помещение №34
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м<sup>2</sup>/мес
+                                                    </div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м<sup>2</sup></div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-02.svg"
+                                                            alt=""> <span>от +2 до +6°</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slide_item flex column between">
-                                    <div class="slide_top">
-                                        <div class="slide_icon">
-                                            <img src="./assets/image/”.svg" alt="">
+                            <!-- 4 -->
+                            <div class="card_item flex between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
                                         </div>
-                                        <div class="slide_description">
-                                            «Арендуем помещение под склад и офис у Холдинга 78 на Предпортовой уже 3-й
-                                            год, отличное местоположение, хорошее состояние объекта и доверительное,
-                                            чуткое отношение со стороны арендодателя помогает развиваться и уверенно
-                                            планировать»
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="slide_bottom flex ">
-                                        <div class="logo_company">
-                                            <img src="./assets/image/company_logo3.svg" alt="">
+                                    <!-- slide btn -->
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
-                                        <div class="info_company">
-                                            Товары из масел льна, кедра и прочих полезных растений; научные исследования
-                                            и разработка здорового питания
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
                                         </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
+                                </div>
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Производственное помещение №34
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м<sup>2</sup>/мес
+                                                    </div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м<sup>2</sup></div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-02.svg"
+                                                            alt=""> <span>от +2 до +6°</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="card_item flex between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide btn -->
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
+                                        </div>
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
+                                </div>
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Производственное помещение №34
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м<sup>2</sup>/мес
+                                                    </div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м<sup>2</sup></div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-02.svg"
+                                                            alt=""> <span>от +2 до +6°</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="card_item flex between">
+                                <div class="swiper card_slide">
+                                    <div class="swiper-wrapper">
+                                        <!-- 1 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="swiper-slide ">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="swiper-slide">
+                                            <div class="slide_img">
+                                                <img src="./assets/image/card_img1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide btn -->
+                                    <div class="slide_btn_list flex between">
+                                        <div class="btnslide flex center a_center next_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
+                                        </div>
+                                        <div class="btnslide flex center a_center prev_card_slide">
+                                            <img src="./assets/image/slide_icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card_pagination"></div>
+                                </div>
+                                <div class="slide_item flex between">
+                                    <div class="slide_info">
+                                        <div class="slide_info_top">
+                                            <div class="slide_title text_18_6">Производственное помещение №34
+                                            </div>
+                                            <div class="slide_title_action">Ленинградская область, пос.
+                                                Тельмана, 60, пом. 34</div>
+                                            <div class="go_to_holding flex">
+                                                <div class="flex">
+                                                    <img src="./assets/image/icon_car.svg" alt="">
+                                                    <span>30 минут до КАД</span>
+                                                </div>
+                                                <div class="flex">
+                                                    <img src="./assets/image/person.svg" alt="">
+                                                    <span>5 минут до остановки</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slde_info_middle">
+                                            <div class="middle_ifo_items flex">
+                                                <!-- item 1 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Арендная ставка</div>
+                                                    <div class="middle_item_number text_24_6">800 ₽/м<sup>2</sup>/мес
+                                                    </div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Площадь</div>
+                                                    <div class="middle_item_number text_18_6">1105 м<sup>2</sup></div>
+                                                </div>
+                                                <!-- item 2 -->
+                                                <div class="middel_item flex column">
+                                                    <div class="middle_item_title">Этаж</div>
+                                                    <div class="middle_item_number text_18_6">1</div>
+                                                </div>
+                                            </div>
+                                            <div class="middle_btn_content flex column">
+                                                <div class="middle_title">Включено</div>
+                                                <div class="middle_btn_gorup flex ">
+                                                    <div class="btn">НДС</div>
+                                                    <div class="btn">Отопление</div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-cold.svg"
+                                                            alt=""> <span>- 18°</span></div>
+                                                    <div class="btn"><img src="./assets/image/thermometer-02.svg"
+                                                            alt=""> <span>от +2 до +6°</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="button light slide_button text_18_6">
+                                            Смотреть видео
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slide_btn_group flex between a_center">
-                            <div class="btn_slide"> <img src="./assets/image/slide_icon.svg" alt=""></div>
-                            <div class="btn_slide prev"> <img src="./assets/image/slide_icon.svg" alt=""></div>
+                        <div class="card_product_pagination flex center">
+                            <div class="flex center a_center active">1</div>
+                            <div class="flex center a_center">2</div>
+                            <div class="flex center a_center">3</div>
+                            <div class="flex center a_center">4</div>
+                            <div class="flex center a_center">9</div>
                         </div>
-                        <div class="pagination flex center a_center"></div>
                     </div>
                 </div>
 
-            </div>
-        </section>
-        <section class="contact_card wow animate__animated animate__fadeInUp">
-            <div class="container">
-                <h2 class="section_title text_center"> Контакты </h2>
-                <div class="contact_component flex">
-                    <div class="contact_left">
-                        <div class="contact_items flex wrap ">
-                            <!-- item1 -->
-                            <div class="contact_item flex column">
-                                <div class="contact_action">
-                                    Вопрос по аренде
-                                </div>
-                                <a href="tel:+78124456836" class="text_24_6">+7 (812) 445-68-36</a>
-                                <a href="mailto:rent@holding78.com" class="text_18_6">rent@holding78.com</a>
+                <div class="form_content ">
+                    <div class="thanks " id="thank_category">
+                        <div class="flex column ">
+                            <div class="thanks_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                <path d="M33.918 19.207C34.0633 19.3521 34.1785 19.5245 34.2571 19.7142C34.3358 19.9038 34.3762 20.1072 34.3762 20.3125C34.3762 20.5178 34.3358 20.7212 34.2571 20.9108C34.1785 21.1005 34.0633 21.2729 33.918 21.418L22.9805 32.3555C22.8354 32.5007 22.663 32.616 22.4734 32.6946C22.2837 32.7733 22.0803 32.8137 21.875 32.8137C21.6697 32.8137 21.4663 32.7733 21.2767 32.6946C21.087 32.616 20.9147 32.5007 20.7695 32.3555L16.082 27.668C15.7889 27.3748 15.6241 26.9771 15.6241 26.5625C15.6241 26.1479 15.7889 25.7502 16.082 25.457C16.3752 25.1638 16.7729 24.9991 17.1875 24.9991C17.6021 24.9991 17.9998 25.1638 18.293 25.457L21.875 29.041L31.707 19.207C31.8522 19.0618 32.0245 18.9465 32.2142 18.8679C32.4038 18.7892 32.6072 18.7488 32.8125 18.7488C33.0178 18.7488 33.2212 18.7892 33.4109 18.8679C33.6005 18.9465 33.7729 19.0618 33.918 19.207ZM45.3125 25C45.3125 29.0174 44.1212 32.9446 41.8892 36.285C39.6573 39.6254 36.4849 42.2289 32.7733 43.7663C29.0616 45.3037 24.9775 45.706 21.0372 44.9222C17.097 44.1384 13.4777 42.2039 10.6369 39.3631C7.79615 36.5224 5.86157 32.903 5.07781 28.9628C4.29405 25.0225 4.6963 20.9384 6.23371 17.2267C7.77111 13.5151 10.3746 10.3427 13.715 8.11077C17.0554 5.87881 20.9826 4.6875 25 4.6875C30.3855 4.69319 35.5487 6.83507 39.3568 10.6432C43.1649 14.4513 45.3068 19.6145 45.3125 25ZM42.1875 25C42.1875 21.6006 41.1795 18.2776 39.2909 15.4511C37.4023 12.6247 34.718 10.4217 31.5774 9.12082C28.4368 7.81994 24.9809 7.47957 21.6469 8.14275C18.3128 8.80594 15.2503 10.4429 12.8466 12.8466C10.4429 15.2503 8.80595 18.3128 8.14276 21.6469C7.47958 24.9809 7.81995 28.4368 9.12083 31.5774C10.4217 34.718 12.6247 37.4023 15.4511 39.2909C18.2776 41.1795 21.6006 42.1875 25 42.1875C29.5568 42.1823 33.9255 40.3699 37.1477 37.1477C40.3699 33.9255 42.1823 29.5568 42.1875 25Z" fill="#F8511C"/>
+                                </svg>
                             </div>
-                            <!-- item2 -->
-                            <div class="contact_item flex column">
-                                <div class="contact_action">
-                                    По остальным вопросам
-                                </div>
-                                <a href="tel:+78123242220" class="text_24_6">+7 (812) 324-22-20</a>
-                                <a href="mailto:hr@holding78.com" class="text_18_6">hr@holding78.com</a>
+                            <div class="thanks_title text_24_6">
+                                Спасибо за заявку! Наш менеджер скоро с вами свяжется.
                             </div>
-                            <!-- item3 -->
-                            <div class="contact_item flex column">
-                                <div class="contact_action">
-                                    Адрес
-                                </div>
-                                <a href="" class="text_18_6">196240, Санкт-Петербург, 4-ый Предпортовый проезд, д. 5
-                                    литер <br> «Л»</a>
-                                <a href="mailto:hr@holding78.com"
-                                    class="button light flex center a_center mt_15 buttons_contact">
-                                    <img src="./assets/image/btn_icon.svg" alt="">
-                                    <span class="text_18_6">Построить маршрут</span>
-                                    <img src="./assets/image/Icon.svg" alt="">
-                                </a>
-                            </div>
+                            <a href="" class="text_18_6 button light">Оставить заявку</a>
                         </div>
                     </div>
-                    <div class="contact_right">
-                        <div class="carta">
-                            <script type="text/javascript" charset="utf-8" async
-                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5ed0471e0e7e2b5442bce174173ff6a5f19ba59231aff2231ecb225f4440b4fa&amp;width=1100&amp;height=333&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <div class="form_section flex center column" id="form_section">
+                        <div class="form_top flex column">
+                            <div class="title_action">Нужна помощь в подборе?</div>
+                            <div class="text_24_6">Оставьте заявку и мы свяжемся с вами</div>
                         </div>
+                        
+                        <form class="forms flex column category_btn">
+                            <!-- item 1 -->
+                            <label class="form_item">
+                                <span class="placeholder">Имя<span>*</span></span>
+                                <input type="text" name="name" required>
+                            </label>
+                            <!-- item 2 -->
+                            <label class="form_item">
+                                <span class="placeholder">Телефон<span>*</span></span>
+                                <input type="text" name="name" required>
+                            </label>
+                            <!-- item 3 -->
+                            <label class="form_item">
+                                <span class="placeholder">E-mail (необязательно)</span>
+                                <input type="email" name="name" required />
+                            </label>
+                            <button type="submit " class="text_18_6 button light">Оставить заявку</button>
+                            <label class="form_item">
+                                <p class="text_center"> Нажимая кнопку «Отправить», вы соглашаетесь с <a
+                                        href="">Политикой
+                                        конфиденциальности</a>
+                                </p>
+                            </label>
+                        </form>
                     </div>
+
+
                 </div>
             </div>
         </section>
+
         <div class="to_top">
             <div class="container">
                 <a href="" class=" flex center a_center">
@@ -740,7 +925,6 @@
             </div>
 
         </div>
-        <!-- modals -->
         <!-- succes -->
         <div class="modal" id="thank">
             <div class="container">
@@ -968,8 +1152,8 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./assets/js/select.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
