@@ -179,13 +179,8 @@ $('.forms.category_btn').submit(function(e){
   $('.form_section#form_section').fadeOut()
   $('.form_content.form_section').css({display:'none !important'})
 });
-$('.top_content .button').click(function(e){
-  e.preventDefault();
-  $('.modal#carta').fadeIn();
-})
-$('.exit_carta').click(function(){
-  $('.modal#carta').fadeOut();
-})
+
+
 function cardSlide(){
   var cardSlide  = new Swiper('.card_slide',{
     navigation:{
@@ -199,4 +194,27 @@ function cardSlide(){
   })
 }
 cardSlide()
-// 
+// mobile filter toggle show
+$('.show_filter_btn').click(function(){
+  $('.filter_form').slideToggle()
+})
+
+
+function moadalNone(Xbutton,modal){
+Xbutton.click(function(){
+  $(this).parents(modal).fadeOut()
+}) 
+}
+moadalNone($('.modal_header .modal_exit'), '.modal')
+moadalNone($('.exit_carta'), '.modal')
+
+function moadalShow(btnShow,modal){
+  btnShow.click(function(e){
+    e.preventDefault();
+    modal.fadeIn()
+  }) 
+  }
+  moadalShow($('.characteristic_show'), $('#caracteristic'))
+  moadalShow($('.top_content .button'), $('#carta'))
+
+ 

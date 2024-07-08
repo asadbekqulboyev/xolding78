@@ -34,6 +34,7 @@
     }
 }
 
+
 .category_wrappre {
     // @media (max-width:1650px) {
     //     max-width: 1400px;
@@ -41,6 +42,7 @@
 
     footer {
         margin-top: 100px;
+
         @media ($tablet) {
             margin-top: 50px;
         }
@@ -57,7 +59,8 @@
     @media ($tablet) {
         padding-top: 0;
     }
-    .container{
+
+    .container {
         @media ($tablet) {
             padding: 0 20px;
         }
@@ -296,6 +299,7 @@
             &:nth-child(2) {
                 .slide_info {
                     gap: 23px;
+
                     @media ($tablet) {
                         gap: 10px;
                     }
@@ -372,15 +376,18 @@
                     }
 
                     .middle_btn_gorup {
-                        &::-webkit-scrollbar{
+                        &::-webkit-scrollbar {
                             display: none;
                         }
+
                         gap: 5px;
+
                         @media (max-width:1650px) {
                             flex-wrap: wrap;
                             overflow-x: auto;
 
                         }
+
                         @media ($tablet) {
                             flex-wrap: nowrap;
                         }
@@ -548,6 +555,134 @@
 
         &.active {
             border-top: 2px solid #223A67;
+        }
+    }
+}
+
+.objects_sections {
+    padding-top: 50px;
+    .container{
+        gap: 25px;
+    }
+    .section_left {
+        max-width: 1100px;
+
+        .slide_img {
+            width: 100%;
+
+            .play_icon {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.30);
+                border: 10px solid rgba(32, 32, 32, 0.3);
+                outline: 1px solid rgb(255, 255, 255);
+
+                img {
+                    width: 24px;
+                }
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .card_pagination {
+            bottom: 25px;
+            position: absolute;
+            z-index: 22;
+
+            .swiper-pagination-bullet {
+                padding: 0;
+                width: 18px;
+                border: 0;
+                height: 4px;
+                border-radius: 2px;
+                outline: 0;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 36px;
+            }
+
+            
+        }
+
+        .slide_btn_list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            width: calc(100% - 30px);
+
+            .btnslide {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.30);
+                z-index: 22;
+                position: absolute;
+                cursor: pointer;
+                user-select: none;
+
+                &.prev_card_slide {
+
+                    transform: rotate(180deg);
+                    right: 0;
+                }
+            }
+            .swiper-button-disabled {
+                display: none !important;
+            }
+        }
+    }
+
+    .section_right {
+        flex: 0 0 auto;
+        padding: 40px;
+        border: 1px solid #E1E8F2;
+        background: #FFF;
+        width: 620px;
+
+        .info_title {
+            color: #223A67;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 41.6px;
+        }
+
+        .info_body {
+            gap: 25px;
+
+            li {
+                margin-left: 22px;
+                list-style: outside;
+            }
+        }
+
+        .characteristic_show {
+            margin-top: 25px;
+            cursor: pointer;
+            border-bottom: 1px dotted #223A67;
+            width: fit-content;
+            line-height: 21px;
+        }
+
+        .btn_group {
+            margin-top: 25px;
+            gap: 15px;
         }
     }
 }

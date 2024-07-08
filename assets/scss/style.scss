@@ -111,7 +111,9 @@ body {
     &.a_center {
         align-items: center;
     }
-
+    &.a_start{
+        align-items:flex-start;
+    }
     &.wrap {
         flex-wrap: wrap;
     }

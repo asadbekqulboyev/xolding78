@@ -16,6 +16,30 @@
         gap: 10px;
     }
 
+    &#caracteristic {
+        .container {
+            max-width: 1090px;
+        }
+    }
+
+    .caracteristic_items {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+
+        .caracteristic_item {
+            padding: 20px 15px;
+            border: 1px solid #E1E8F2;
+            background: #FFF;
+
+            .caracter_title {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+    }
+
     &#carta {
         padding: 25px;
 
@@ -25,7 +49,7 @@
 
         .carta {
             width: 100%;
-            height: calc(100% - 70px) ;
+            height: calc(100% - 70px);
             overflow-y: hidden;
 
             img {
@@ -116,6 +140,7 @@
         color: #ffff;
     }
 }
-.exit_carta{
+
+.exit_carta {
     cursor: pointer;
 }
