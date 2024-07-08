@@ -216,7 +216,7 @@ function moadalShow(btnShow,modal){
   }
   moadalShow($('.characteristic_show'), $('#caracteristic'))
   moadalShow($('.top_content .button'), $('#carta'))
-
+  moadalShow($('.sxema'), $('#sxema'))
 //  toggleSlide
 function toggleSlide(slideBtn, SlideContent){
  slideBtn.click(function(){

@@ -17,8 +17,27 @@
     }
 
     &#caracteristic {
+        overflow-y: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
         .container {
             max-width: 1090px;
+        }
+        .modal_body{
+            margin-top: 20px;
+        }
+    }
+    &#sxema{
+        padding-top: 25px;
+        
+        overflow-y: auto;
+        .modal_body{
+        padding-bottom: 25px;
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 
@@ -26,7 +45,13 @@
         display: grid;
         gap: 10px;
         grid-template-columns: repeat(5, 1fr);
-
+        overflow-y: auto;
+        @media ($smLaptop) {
+            grid-template-columns: repeat(3, 1fr);
+            }
+        @media ($tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        }
         .caracteristic_item {
             padding: 20px 15px;
             border: 1px solid #E1E8F2;
@@ -36,6 +61,7 @@
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 600;
+                
             }
         }
     }

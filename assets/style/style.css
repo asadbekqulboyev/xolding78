@@ -1422,13 +1422,44 @@
   cursor: pointer;
   gap: 10px;
 }
+.modal#caracteristic {
+  overflow-y: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .modal#caracteristic .container {
   max-width: 1090px;
+}
+.modal#caracteristic .modal_body {
+  margin-top: 20px;
+}
+.modal#sxema {
+  padding-top: 25px;
+  overflow-y: auto;
+}
+.modal#sxema .modal_body {
+  padding-bottom: 25px;
+  width: 100%;
+}
+.modal#sxema .modal_body img {
+  width: 100%;
+  object-fit: contain;
 }
 .modal .caracteristic_items {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(5, 1fr);
+  overflow-y: auto;
+}
+@media (max-width:1200px) {
+  .modal .caracteristic_items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width:768px) {
+  .modal .caracteristic_items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .modal .caracteristic_items .caracteristic_item {
   padding: 20px 15px;
