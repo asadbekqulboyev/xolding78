@@ -11,13 +11,27 @@
         @media ($smLaptop) {
             gap: 10px;
         }
+        @media ($tablet) {
+            padding: 0 20px;
+        }
     }
 
     .links {
         gap: 0 10px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         @media ($smLaptop) {
             gap: 0 16px;
+        }
+
+        @media ($tablet) {
+            overflow-x: auto;
+            gap: 10px;
+            li {
+                flex: 0 0 auto;
+            }
         }
 
         a {
@@ -30,6 +44,16 @@
             &.active {
                 color: #243452;
             }
+        }
+    }
+
+    .section_title.t_md {
+        @media ($tablet) {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 33.8px;
+            /* 33.8px */
         }
     }
 }
@@ -71,6 +95,10 @@
         border: 1px solid #E1E8F2;
         background: #FFF;
         cursor: pointer;
+
+        &.mt_mobile {
+            margin: 25px 0;
+        }
 
         .icon_filter {
             line-height: 0;
@@ -317,7 +345,7 @@
                 }
 
                 @media ($tablet) {
-                    padding: 15px 20px;
+                    padding: 15px 0px 20px 20px;
                     gap: 10px;
                 }
 
@@ -561,11 +589,30 @@
 
 .objects_sections {
     padding-top: 50px;
-    .container{
-        gap: 25px;
+
+    @media ($tablet) {
+        padding-top: 25px;
     }
+
+    .container {
+        gap: 25px;
+
+        @media (max-width:1599px) {
+            flex-direction: column;
+        }
+
+        @media ($tablet) {
+            padding: 0;
+        }
+    }
+
     .section_left {
+        width: 100%;
         max-width: 1100px;
+
+        @media (max-width:1599px) {
+            max-width: 100%;
+        }
 
         .slide_img {
             width: 100%;
@@ -583,6 +630,12 @@
                 background: rgba(255, 255, 255, 0.30);
                 border: 10px solid rgba(32, 32, 32, 0.3);
                 outline: 1px solid rgb(255, 255, 255);
+
+                @media ($tablet) {
+                    width: 50px;
+                    height: 50px;
+                    border: 5px solid rgba(32, 32, 32, 0.3);
+                }
 
                 img {
                     width: 24px;
@@ -607,13 +660,19 @@
                 height: 4px;
                 border-radius: 2px;
                 outline: 0;
+                @media ($tablet) {
+                    width: 8px;
+                }
             }
 
             .swiper-pagination-bullet-active {
                 width: 36px;
+                @media ($tablet) {
+                    width: 20px;
+                }
             }
 
-            
+
         }
 
         .slide_btn_list {
@@ -626,6 +685,10 @@
             display: flex;
             align-items: center;
             width: calc(100% - 30px);
+
+            @media ($tablet) {
+                display: none;
+            }
 
             .btnslide {
                 width: 60px;
@@ -643,6 +706,7 @@
                     right: 0;
                 }
             }
+
             .swiper-button-disabled {
                 display: none !important;
             }
@@ -650,25 +714,60 @@
     }
 
     .section_right {
-        flex: 0 0 auto;
         padding: 40px;
         border: 1px solid #E1E8F2;
         background: #FFF;
-        width: 620px;
+        width: 100%;
+        max-width: 620px;
+
+
+        @media (max-width:1599px) {
+            max-width: 100%;
+        }
+
+        @media ($tablet) {
+            padding: 20px;
+            margin: 0 auto;
+            width: calc(100% - 40px);
+        }
 
         .info_title {
             color: #223A67;
             font-size: 32px;
             font-weight: 600;
             line-height: 41.6px;
+
+            @media ($tablet) {
+                font-size: 22px;
+            }
+        }
+
+        .icon_show_info {
+            line-height: 0;
         }
 
         .info_body {
             gap: 25px;
 
+            @media ($tablet) {
+                gap: 15px 0;
+            }
+
             li {
                 margin-left: 22px;
                 list-style: outside;
+
+                @media ($tablet) {
+                    font-size: 14px;
+                    line-height: 23.8px;
+                }
+            }
+
+            p {
+                @media ($tablet) {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
             }
         }
 
@@ -678,11 +777,26 @@
             border-bottom: 1px dotted #223A67;
             width: fit-content;
             line-height: 21px;
+
+            @media ($tablet) {
+                margin-top: 15px;
+            }
         }
 
         .btn_group {
             margin-top: 25px;
             gap: 15px;
+
+            @media ($tablet) {
+                flex-direction: column;
+                margin-top: 15px;
+                gap: 15px;
+
+                .button {
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
         }
     }
 }
