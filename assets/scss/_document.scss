@@ -1,0 +1,59 @@
+.document {
+    margin-top: 50px;
+
+    .container_document {
+        max-width: 1040px;
+        margin: 0 auto;
+
+        .documen_items {
+            gap: 15px;
+
+            .document_item {
+                border: 1px solid #E1E8F2;
+                background: #FFF;
+                padding: 25px 30px;
+                &:last-child{
+                    .document_cotent{
+                        display: block;
+                    }
+                }
+                .document_left {
+                    gap: 10px;
+                }
+
+                .document_icon {
+                    width: 50px;
+                    height: 40px;
+                    border: 1px solid #E1E8F2;
+                    background: #FFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 40px;
+                }
+
+                .document_cotent {
+                    display: none;
+
+                    .document_cotent_item {
+                        border: 1px solid #E1E8F2;
+                        margin-top: 25px;
+                        padding: 25px 20px;
+                        .document_cotent_left{
+                            gap: 15px;
+                        }
+                        .download_icon {
+                            display: flex;
+                            width: 50px;
+                            height: 40px;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -11,6 +11,8 @@
 @import 'footer';
 @import 'category';
 @import 'main';
+@import 'public';
+@import 'document';
 
 
 * {
@@ -245,7 +247,7 @@ body {
 .to_top {
     position: fixed;
     bottom: 100px;
-    z-index: 2;
+    z-index: 232;
     right: 50px;
     .container{
         padding-right: 0;
